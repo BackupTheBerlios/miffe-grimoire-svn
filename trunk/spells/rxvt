@@ -17,6 +17,10 @@ removed at compile-time to reflect your needs.
 "
 
 function build() {
+      # With -Os optimization on x86_64, the arrow and PgDw/Up keys do
+      # not work (gcc 3.4.3)
+      export  CFLAGS="$CFLAGS -O2"
+
       ./configure --build=$BUILD                \
                   --prefix=/usr                 \
                   --sysconfdir=/etc             \
