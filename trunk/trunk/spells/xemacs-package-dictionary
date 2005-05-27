@@ -1,0 +1,6 @@
+inherit  xemacs
+   VERSION=( "1.15" "1.12" "1.11" )
+    SOURCE="xemacs/packages/dictionary-$VERSION-pkg"
+      DESC="$SPELL provides interface to RFC2229 dictionary servers.
+"
+

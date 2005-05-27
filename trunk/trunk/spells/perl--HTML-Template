@@ -1,0 +1,10 @@
+inherit  perl--modules
+   VERSION=( "2.7" )
+  CATEGORY="$CATEGORY web"
+  HOMEPAGE="$HOMEPAGE/search?dist=HTML-Template"
+    SOURCE="S/SA/SAMTREGAR/HTML-Template-$VERSION"
+  ESTIMATE="10"
+  EPROVIDE="HTML-Template"
+      DESC="$SPELL is perl module for using HTML templates from CGI scripts.
+Allows for a clean separation of Perl code and HTML markup.
+"

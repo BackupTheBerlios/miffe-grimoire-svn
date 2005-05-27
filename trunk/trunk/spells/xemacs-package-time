@@ -1,0 +1,6 @@
+inherit  xemacs
+   VERSION=( "1.14" "1.13" )
+    SOURCE="xemacs/packages/time-$VERSION-pkg"
+      DESC="$SPELL displays time & date on the modeline.
+"
+
