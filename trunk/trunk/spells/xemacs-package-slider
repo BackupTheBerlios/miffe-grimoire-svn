@@ -1,6 +1,0 @@
-inherit  xemacs
-   VERSION=( "1.15" "1.14" "1.13" )
-    SOURCE="xemacs/packages/slider-$VERSION-pkg"
-      DESC="$SPELL provides user interface tool.
-"
-

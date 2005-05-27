@@ -1,6 +1,0 @@
-inherit  perl--modules
-   VERSION=( "1.94" )
-    SOURCE="D/DC/DCONWAY/Parse-RecDescent-$VERSION"
-  HOMEPAGE="$HOMEPAGE/search?dist=Parse::RecDescent"
-  ESTIMATE="11"
-      DESC="$SPELL generates recursive-descent parsers"

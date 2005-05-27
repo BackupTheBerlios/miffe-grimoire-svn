@@ -1,9 +1,0 @@
-inherit  perl--modules
-   VERSION=( "1.43" )
-  CATEGORY="$CATEGORY graphic"
-  HOMEPAGE="$HOMEPAGE/search?dist=GDGraph"
-    SOURCE="M/MV/MVERB/GDGraph-$VERSION"
-       REQ="perl gd"
-  ESTIMATE="37"
-  EPROVIDE="GDGraph"
-      DESC="$SPELL is a graph plotting module for perl making use of GD."
