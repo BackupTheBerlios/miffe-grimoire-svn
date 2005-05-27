@@ -1,4 +1,4 @@
-   VERSION=( "1.9" "1.8" )
+   VERSION=( "2.0" "1.9" "1.8" )
   CATEGORY="graphic-editor"
  ATTRIBUTE="x11 new"
     SOURCE="aoi/aoi${VERSION:0:1}${VERSION:2:1}.zip"
