@@ -25,10 +25,6 @@ determined by power consumption rates.
 "
 build() {
 
- sed  -i '21i#define HID_MAX_USAGES                  1024'       \
-         src/drivers/usb/linux-usb.c                             &&
- sed  -i 's:apcupsd.css:/apcupsd.css:' src/cgi/cgilib.c          &&
-
  ./configure     --build=$BUILD                                  \
                  --prefix=/usr                                   \
                  --sysconfdir=/etc/apcupsd                       \
@@ -42,10 +38,11 @@ build() {
  prepare_install         &&
  make  install           &&
 
- if [ -f /etc/rc0.d/S90halt ]; then
+ ( if [ -f /etc/rc0.d/S90halt ]; then
          rm  /etc/rc0.d/S90halt
          ln  -s /etc/init.d/halt.sh /etc/rc0.d/S99halt
- fi
+   fi
+ )			 &&
 
  install  -m 0754  $SCRIPT_DIR/apcupsd $SCRIPT_DIR/UPSdown /etc/init.d   &&
 
