@@ -1,0 +1,30 @@
+   VERSION=( "1.1.0-b2" )
+  CATEGORY="kernel network"
+ ATTRIBUTE="driver linux-26-module new"
+    SOURCE="rt2400/$SPELL-$VERSION.tar.gz"
+       URL="$SOURCEFORGE_URL"
+  HOMEPAGE="http://rt2x00.serialmonkey.com"
+       REQ=( "" "qt-x11-free:qt-x11-free::for a GUI WLAN scan and configure utility" )
+  ESTIMATE="28"
+      DESC="$SPELL is a Linux driver for wireless Ralink 802.11bg cards  
+based on rt2500 chipset.
+"
+
+build() {
+ cd  Module		&&
+ cp  README  ..		&&
+ 
+ make			&&
+ prepare_install	&&
+ make install		&&
+
+ ( if echo $OPTS | grep -q "qt-x11-free" ; then
+	cd  ../Utilitys					&&
+	qmake -o  Makefile  raconfig2500.pro		&&
+	sed -i "5i QTDIR = /usr"  Makefile		&&
+	sed -i "s:-lqt:-lqt-mt:"  Makefile		&&
+ 	sed -i "s:^INCPATH  =:INCPATH  = -I/usr/include/qt:"  Makefile	&&
+	make						&&
+	install  -m 755   RaConfig2500  /usr/bin	
+ fi ) 
+}

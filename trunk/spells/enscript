@@ -1,0 +1,11 @@
+      VERSION=( "1.6.4" )
+      CATEGORY="utility"
+     ATTRIBUTE="console utility"
+        SOURCE="enscript-$VERSION.tar.gz"
+           URL="http://www.iki.fi/mtr/genscript"
+      HOMEPAGE="http://people.ssh.fi/mtr/gentscript"
+      ESTIMATE="133"
+          DESC="enscript converts ASCII files to PostScript
+and spools generated PostScript output to the 
+specified printer or leaves it to file.
+"
