@@ -5,7 +5,7 @@
            URL="$SOURCEFORGE_URL"
       HOMEPAGE="http://denyhosts.sourceforge.net"
            REQ="openssh tcp_wrappers Python"
-      ESTIMATE="20"
+      ESTIMATE="16"
      FRESHMEAT="DenyHosts"
           DESC="DenyHosts is a script to help thwart ssh server attacks.
 If you have ever looked at your ssh log you may be alarmed 
