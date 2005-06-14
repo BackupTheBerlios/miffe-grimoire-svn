@@ -29,9 +29,8 @@ function build() {
   cp	sonypidd	/usr/bin                &&
   chown root.root	/usr/bin/sonypidd	&&
   chmod 755		/usr/bin/sonypidd	&&
-  write_sonypid_to_initd                     &&
-  chmod 755		/etc/init.d/sonypid.sh	&&
-  ln -s	../init.d/sonypid.sh /etc/rcS.d/S99sonypid
+  write_sonypid_to_initd                   	&&
+  chmod 700		/etc/init.d/sonypid	
 
 }
 
@@ -42,25 +41,59 @@ function pre_build() {
 }
 
 function write_sonypid_to_initd() {
-cat << EOF > /etc/init.d/sonypid.sh
+cat << EOF > /etc/init.d/sonypid
 #!/bin/sh
-# This script starts/stops deamon that watches for sonypi events
-# on Sony VAIO laptops
-#
+
+### BEGIN INIT INFO
+# Provides: sonypid
+# Required-Start: \$local_fs module-init-tools
+# Required-Stop: 
+# Default-Start:  3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: sonypid monitors sonypi events on Sony VAIO laptops
+# Description: sonypid monitors sonypi events on Sony VAIO laptops
+### END INIT INFO
+
+. /lib/lsb/init-functions
+
+SONYPID_CMD="/usr/bin/sonypidd"
+PERL_CMD=\$( which perl )
+
+sonypid_pid() {
+        echo \$( pgrep -f "\$PERL_CMD \$SONYPID_CMD" )
+}
 
 start() {
-	/usr/bin/sonypidd >/dev/null 2>&1
+        MSG="Starting sonypid daemon"
+        PID=\$( sonypid_pid )
+        if [ "x\$PID" == "x" ]; then
+                \$SONYPID_CMD >/dev/null 2>&1            &&
+                log_success_msg "\$MSG"  ||  log_failure_msg "\$MSG"
+        else
+                log_success_msg "\$MSG"
+        fi
 }
 
 stop() {
-	pkill sonypidd
+        MSG="Stopping sonypid daemon"
+        PID=\$( sonypid_pid )
+        if [ "x\$PID" == "x" ]; then
+                log_success_msg "\$MSG"
+        else
+                kill \$PID  &&
+                log_success_msg "\$MSG"  ||  log_failure_msg "\$MSG"
+        fi
 }
 
 case "\$1" in 
 	start)		start	;;
 	stop)		stop	;;
 	restart)	stop; start	;;
-	*)		echo "Usage: $0 start|stop|restart"
+	*)		echo "Usage: \$( basename \$0 ) {start|stop|restart}"
 esac
 EOF
+}
+
+post_install() {
+ /lib/lsb/install_initd  /etc/init.d/sonypid
 }

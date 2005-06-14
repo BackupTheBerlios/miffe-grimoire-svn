@@ -17,8 +17,26 @@ disk spinup. It causes a significant improvement in battery
 life (for usage patterns that allow it)."
 
 build(){
- sed -i "s:/usr/local:/usr:" install.sh
+sed  -i  "s:/usr/local:/usr:" install.sh
+
+sed  -i  "2i### BEGIN INIT INFO
+2i# Provides: laptop-mode
+2i# Required-Start: \$local_fs
+2i# Required-Stop:  \$local_fs
+2i# Default-Start: S
+2i# Default-Stop: 
+2i# Short-Description: laptop-mode allows to extend the battery life 
+2i# Description: laptop-mode allows to extend the battery life by
+2i#     grouping disk write activity, so that only reads of uncached
+2i#     data result in a disk spinup.
+2i### END INIT INFO"  \
+etc/init.d/laptop-mode
 
  prepare_install	&&
  ./install.sh
+}
+
+post_install() {
+ /lib/lsb/install_initd  /etc/init.d/laptop-mode
+ true
 }
