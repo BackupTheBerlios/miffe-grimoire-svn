@@ -25,6 +25,23 @@ determined by power consumption rates.
 "
 build() {
 
+ modify_mount() {
+   SS="Should-Stop:"
+   US="UPSdown"
+   MNT_SCRIPT="/etc/init.d/mount"
+
+   if ! ( grep "$SS" $MNT_SCRIPT | grep "$US" ); then
+	if [ grep -q "$SS" ]; then
+	  sed  -i "s/$SS /$SS $US/"  $MNT_SCRIPT
+	else
+	  POS=$( grep -n "Should-Start:" $MNT_SCRIPT | cut -f1 -d":" )
+	  sed  -i "$(( ++POS ))i\# $SS $US"  $MNT_SCRIPT
+	fi
+   fi
+ }
+
+ modify_mount		&&
+
  ./configure     --build=$BUILD                                  \
                  --prefix=/usr                                   \
                  --sysconfdir=/etc/apcupsd                       \
@@ -36,24 +53,7 @@ build() {
 
  make                    &&
  prepare_install         &&
- make  install           &&
-
- ( if [ -f /etc/rc0.d/S90halt ]; then
-         rm  /etc/rc0.d/S90halt
-         ln  -s /etc/init.d/halt.sh /etc/rc0.d/S99halt
-   fi
- )			 &&
-
- install  -m 0754  $SCRIPT_DIR/apcupsd $SCRIPT_DIR/UPSdown /etc/init.d   &&
-
- ln  -sf /etc/init.d/apcupsd /etc/rc0.d/K79apcupsd       &&
- ln  -sf /etc/init.d/UPSdown /etc/rc0.d/K98UPSdown       &&
- ln  -sf /etc/init.d/apcupsd /etc/rc1.d/K79apcupsd       &&
- ln  -sf /etc/init.d/apcupsd /etc/rc2.d/S20apcupsd       &&
- ln  -sf /etc/init.d/apcupsd /etc/rc3.d/S20apcupsd       &&
- ln  -sf /etc/init.d/apcupsd /etc/rc4.d/S20apcupsd       &&
- ln  -sf /etc/init.d/apcupsd /etc/rc5.d/S20apcupsd       &&
- ln  -sf /etc/init.d/apcupsd /etc/rc6.d/K79apcupsd
+ make  install           
 
 }
 
