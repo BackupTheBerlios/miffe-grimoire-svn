@@ -33,7 +33,13 @@ status()  {
 
 start() {
   MSG="Starting $NAME"
-  $SERV  &&  log_success_msg "$MSG"  ||  ( log_failure_msg "$MSG" ; status )
+  if $SERV; then
+	  log_success_msg "$MSG"
+	  echo  >>  $PIDF
+  else 
+	  log_failure_msg "$MSG"
+	  status 
+  fi
 }
 
 stop() {
