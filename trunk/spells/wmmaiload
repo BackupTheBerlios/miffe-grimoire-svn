@@ -1,8 +1,8 @@
-  VERSION=( "1.0.3" "1.0.2" "0.9.3" )
+  VERSION=( "1.0.4" "1.0.3" "1.0.2" "0.9.3" )
  CATEGORY="dockapps"
 ATTRIBUTE="x11 utility"
       URL="http://tnemeth.free.fr/projets/programmes/"
-   SOURCE="$SPELL-$VERSION"
+   SOURCE="$SPELL-$VERSION.tar.gz"
  HOMEPAGE="http://tnemeth.free.fr/projets/dockapps.html"
       REQ="x11 gtk+-v1.2 glib-v1.2"
  ESTIMATE="33"

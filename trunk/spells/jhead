@@ -1,7 +1,7 @@
-    VERSION=( "2.3" "2.2" "2.1" "2.0" )
+    VERSION=( "2.4" "2.3" "2.2" "2.1" "2.0" )
    CATEGORY="graphic"
   ATTRIBUTE="utility"
-     SOURCE="~mwandel/jhead/jhead-$VERSION"
+     SOURCE="~mwandel/jhead/jhead-$VERSION.tar.gz"
         URL="http://www.sentex.net"
    HOMEPAGE="http://www.sentex.net/~mwandel/jhead"
    ESTIMATE="5"
