@@ -16,6 +16,8 @@ condition display.
 "
 
 function build() {
+  cp  HINTS example.conf  docs/
+
   ./configure	--prefix=/usr		\
 		--sysconfdir=/etc	\
 		$OPTS			&&
