@@ -1,12 +1,14 @@
-   VERSION=( "6.0" )
+   VERSION=( "6.1" )
     IGNORE="1999"
   CATEGORY="development"
  ATTRIBUTE="x11 client"
     SOURCE="insight-$VERSION"
   HOMEPAGE="http://sources.redhat.com/insight/"
        URL="ftp://sources.redhat.com/pub/gdb/releases"
-       REQ="tcl tk gdb"
+       REQ="tcl tk"
  FRESHMEAT="insight"
+  EPROVIDE="gdb"
+  ESTIMATE="1161"
       DESC="insight is a tcl/tk gdb GUI
 
 Insight is a powerfull GUI debuger allowing you to
