@@ -1,0 +1,18 @@
+   VERSION=( "0.8" )
+  CATEGORY="archive"
+ ATTRIBUTE="console"
+    SOURCE="pub/linux/system/backup/mt-st-$VERSION"
+       URL="ftp://ftp.ibiblio.org"
+  ESTIMATE="3060"
+      DESC="mt-st provides magnetic tape control tools for SCSI tapes
+
+Includes a mt-like program supporting additional commands using ioctls
+specific to the Linux SCSI tape driver, and the program
+stinit to define the SCSI tape devices in system startup scripts.
+"
+
+build() {
+ make						&&
+ prepare_install				&&
+ make  install
+}
