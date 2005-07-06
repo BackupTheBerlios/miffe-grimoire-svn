@@ -1,9 +1,9 @@
-       VERSION=( "0.6.16" )
+       VERSION=( "0.6.17" "0.6.16" )
       CATEGORY="graphic-editor"
      ATTRIBUTE="x11 python new"
         SOURCE="sketch/skencil-$VERSION"
 	   URL="$SOURCEFORGE_URL"
-      HOMEPAGE="http://sketch.sourceforge.net"
+      HOMEPAGE="http://www.skencil.org"
            REQ=( "tcl tk Imaging qt-x11-free"
 	      "PyXML:::Install the SVG import filter."
 	      "gettext:--with-nls::Enable national language support."

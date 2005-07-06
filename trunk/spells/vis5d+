@@ -1,0 +1,42 @@
+  VERSION=( "1.3.0-beta" )
+ CATEGORY="graphics science"
+ATTRIBUTE="x11"
+      URL="$SOURCEFORGE_URL"
+   SOURCE="vis5d/$SPELL-$VERSION.tar.bz2"
+ HOMEPAGE="http://vis5d.sourceforge.net"
+      REQ=("x11"
+           "gimp:::for gradient data files and gradient editing tool"
+           "netcdf:::for irregular data support and other features"
+          )
+ ESTIMATE="660"
+FRESHMEAT="vis5d"
+     DESC="$SPELL a volumetric visualization program for scientific datasets
+in 3+ dimensions. Vis5d+ is intended as a central repository 
+for enhanced versions and development work on Vis5d. This 
+project started out, with the blessing of the original Vis5d 
+developers, as a conversion of Vis5d's build process to use 
+GNU autoconf and automake. (Inspired by the difficulty of 
+getting Vis5d to compile on the author's LinuxPPC PowerBook.) 
+It quickly became apparent that many other enhancements were 
+possible, and were of wide interest to users. Moreover, a 
+large number of enhanced versions to Vis5d exist that have 
+not been merged into the original Vis5d sources, due to time 
+and resource limitations of the original developers, or to 
+differences of opinion about design directions.
+"
+
+build() {
+ ./configure --prefix=/usr		\
+             --enable-threads		\
+             --with-memory=0		\
+             $OPTS			&&
+ make					&&
+ prepare_install			&&
+ make  install				&&
+ if [ ! -d  /usr/doc/$SPELL ]; then
+   mkdir -p /usr/doc/$SPELL
+ else 
+   true
+ fi					&& 
+ install -m 644 -g 0 -o 0  *.v5d  /usr/doc/$SPELL/
+}
