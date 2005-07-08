@@ -1,0 +1,51 @@
+   VERSION=( "1.12" )
+  CATEGORY="documentation editor utility"
+ ATTRIBUTE="console new"
+    SOURCE="pdftk-${VERSION}.tar.bz2"
+       URL="http://www.pdfhacks.com/pdftk"
+  HOMEPAGE="http://www.pdfhacks.com/pdftk"
+ FRESHMEAT="pdftk"
+  ESTIMATE="693"
+      DESC="pdftk is a pdf toolkit
+If PDF is electronic paper, then pdftk is an electronic staple-remover, 
+hole-punch, binder, secret-decoder-ring, and X-Ray-glasses. 
+Pdftk is a simple tool for doing everyday things with PDF documents. 
+
+Keep one in the top drawer of your desktop and use it to:
+Merge PDF Documents
+Split PDF Pages into a New Document
+Decrypt Input as Necessary \(Password Required\)
+Encrypt Output as Desired
+Fill PDF Forms with FDF Data and/or Flatten Forms
+Apply a Background Watermark
+Report on PDF Metrics such as Metadata, Bookmarks, and Page Labels
+Update PDF Metadata
+Attach Files to PDF Pages or the PDF Document
+Unpack PDF Attachments
+Burst a PDF Document into Single Pages
+Uncompress and Re-Compress Page Streams
+Repair Corrupted PDF \(Where Possible\)
+
+Pdftk allows you to manipulate PDF easily and freely. 
+It does not require Acrobat, and it runs on Windows, Linux, 
+Mac OS X, FreeBSD and Solaris.
+"
+
+do_patches(){
+patch Makefile.Generic << EOF
+14c
+TOOLPATH=/opt/gcc/current/bin/
+.
+EOF
+}
+
+build()
+{
+   cd pdftk                    	&&
+   do_patches                  	&&
+   make -f Makefile.Generic    	&&
+   strip -s pdftk              	&&
+   prepare_install             	&&
+   install  -m 755 -o 0 -g 0  pdftk  /usr/bin/				&&
+   install  -m 644 -o 0 -g 0  ../debian/pdftk.1  /usr/man/man1		
+}
