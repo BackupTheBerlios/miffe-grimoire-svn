@@ -1,7 +1,7 @@
-   VERSION=( "0.8" )
+   VERSION=( "0.9" "0.8" )
   CATEGORY="archive"
  ATTRIBUTE="console"
-    SOURCE="pub/linux/system/backup/mt-st-$VERSION"
+    SOURCE="pub/linux/system/backup/mt-st-$VERSION.tar.gz"
        URL="ftp://ftp.ibiblio.org"
   ESTIMATE="3060"
       DESC="mt-st provides magnetic tape control tools for SCSI tapes
