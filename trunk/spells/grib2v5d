@@ -1,0 +1,31 @@
+  VERSION=( "2.1" )
+ CATEGORY="graphics science"
+ATTRIBUTE="console utility"
+      URL="$SOURCEFORGE_URL"
+   SOURCE="grib2v5d/$SPELL-$VERSION.tar.gz"
+ HOMEPAGE="http://grib2v5d.sourceforge.net"
+      REQ="picogrib gributil vis5d+"
+ ESTIMATE="138"
+FRESHMEAT="grib2v5d"
+     DESC="$SPELL converts the content of a GRIB file into a Vis5D file" 
+
+build() {
+
+ cp  $SCRIPT_DIR/g77fix.f  hibu/				&&
+
+ sed  -i  's: ltlwd.o: g77fix.o ltlwd.o:'	hibu/Makefile	&&  
+
+ sed  -i  's:/usr/local:/usr:
+           10iF90LINK="f90 -lg2c -L/opt/gcc/current/lib"'	\
+					Configure.set		&&
+  
+ sed  -i  's:/bin/ksh:/bin/bash:
+           s:\$"\$var":\$\{\!var\}:'	configure		&&
+
+ sed  -i  '520d
+           520ic      data repeat/.false./'  hibu/ngetpoint.f	&&
+ ./configure				&&
+ make					&&
+ prepare_install			&&
+ make  install				
+}

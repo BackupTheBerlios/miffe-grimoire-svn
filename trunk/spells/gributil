@@ -1,0 +1,24 @@
+  VERSION=( "2.2" )
+ CATEGORY="graphics science"
+ATTRIBUTE="console utility"
+      URL="$SOURCEFORGE_URL"
+   SOURCE="gributil/grib_util-$VERSION.tar.gz"
+ HOMEPAGE="http://gributil.sourceforge.net"
+      REQ="picogrib"
+ ESTIMATE="27"
+FRESHMEAT="gributil"
+     DESC="$SPELL provides a library for decoding GRIB messages" 
+
+build() {
+
+ cd  grib_util				&&
+ 
+ sed  -i  "s:^include:#include:
+   s:objects =:objects = /usr/lib/libpicogrib.a:
+   2iDESTDIR = /usr
+   2ilibdir = .
+   2iAR = ar rc"        Makefile	&&
+ make					&&
+ prepare_install			&&
+ make  install				
+}

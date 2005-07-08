@@ -1,0 +1,25 @@
+  VERSION=( "2.04" )
+ CATEGORY="graphics science"
+ATTRIBUTE="console utility"
+      URL="$SOURCEFORGE_URL"
+   SOURCE="picogrib/$SPELL-$VERSION.tar.gz"
+ HOMEPAGE="http://picogrib.sourceforge.net"
+      REQ=""
+ ESTIMATE="27"
+FRESHMEAT="picogrib"
+     DESC="$SPELL is a GRIB software package compatible with ECMWF GRIBEX 
+This software package was developed to supply a multi-platform GRIB
+C-language (FORTRAN callable) decoding package compatible to some extent
+with ECMWF (http://www.ecmwf.int) GRIBEX routine.
+"
+
+build() {
+ 
+ sed  -i  "s:cal_led:called:
+           s:CAL_LED:CALLED:"			  configure		&&
+ sed  -i  "s:INSTALLDIR=\$HOME:INSTALLDIR=/usr:"  Configure.set		&&
+ ./configure 				&&
+ make					&&
+ prepare_install			&&
+ make  install				
+}
