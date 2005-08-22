@@ -1,4 +1,4 @@
-       VERSION=( "0.6.0" )
+       VERSION=( "1.0.1" )
       CATEGORY="security"
      ATTRIBUTE="console"
         SOURCE="denyhosts/DenyHosts-$VERSION.tar.gz"
@@ -27,15 +27,21 @@ function build() {
 #!/bin/bash
 OLDDIR=\$( pwd )
 cd /var
-python $IDIR/denyhosts.py  -c /etc/$CFILE \$@
+$IDIR/denyhosts.py  -c /etc/$CFILE \$@
 cd \$OLDDIR
 EOF
 
- prepare_install                          		&&
- mkdir -p $IDIR						&&
- install  -m 755 -o 0 -g 0  denyhosts.py  $IDIR		&&
- install  -m 644 -o 0 -g 0  {setup,version}.py  $IDIR	&&
- install  -m 755 -o 0 -g 0  denyhosts     /usr/sbin	&&
+ sed  -i  "s:bin/denyhosts.py:sbin/denyhosts.py:"  daemon-control-dist
+ sed  -i  "s:/usr/share/denyhosts/denyhosts.cfg:/etc/${CFILE}:"  daemon-control-dist  
+
+ prepare_install                          			&&
+ mkdir -p $IDIR							&&
+ install  -m 755 -o 0 -g 0 -d             $IDIR/DenyHosts	&&
+ install  -m 644 -o 0 -g 0  DenyHosts/*   $IDIR/DenyHosts	&& 
+ install  -m 755 -o 0 -g 0  denyhosts.py  $IDIR			&&
+ install  -m 644 -o 0 -g 0  setup.py      $IDIR			&&
+ install  -m 755 -o 0 -g 0  daemon-control-dist  $IDIR/denyhostsd	&&
+ install  -m 755 -o 0 -g 0  denyhosts     /usr/sbin		&&
  install  -m 644 -o 0 -g 0  $CFILE-dist   /etc/$CFILE
  set +x
 }

@@ -1,7 +1,7 @@
-   VERSION=( "1.05" "1.04" )
+   VERSION=( "1.10" "1.05" "1.04" )
   CATEGORY="disk utility"
  ATTRIBUTE="console"
-    SOURCE="downloads/laptop-mode-tools_$VERSION"
+    SOURCE="downloads/laptop-mode-tools_$VERSION.tar.gz"
        URL="http://www.xs4all.nl/~bsamwel/laptop_mode/tools"
   HOMEPAGE="http://www.xs4all.nl/~bsamwel/laptop_mode/tools"
        REQ="acpid"

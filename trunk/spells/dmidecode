@@ -1,4 +1,4 @@
-   VERSION=( "2.6" "2.5" )
+   VERSION=( "2.7" "2.6" "2.5" )
   CATEGORY="utility"
  ATTRIBUTE="console"
   HOMEPAGE="http://www.nongnu.org/dmidecode"

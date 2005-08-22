@@ -1,5 +1,5 @@
 inherit  perl--modules
-   VERSION=( "0.96" )
+   VERSION=( "0.97" "0.96" )
     SOURCE="B/BE/BEHROOZI/IO-Socket-SSL-$VERSION"
   HOMEPAGE="$HOMEPAGE/search?dist=IO-Socket-SSL"
   ESTIMATE="10"

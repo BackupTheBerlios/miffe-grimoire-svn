@@ -1,5 +1,5 @@
 inherit  perl--modules
-   VERSION=( "5.42a" )
+   VERSION=( "5.44" "5.42a" )
   CATEGORY="$CATEGORY time"
   HOMEPAGE="$HOMEPAGE/search?dist=DateManip"
     SOURCE="S/SB/SBECK/DateManip-$VERSION"
