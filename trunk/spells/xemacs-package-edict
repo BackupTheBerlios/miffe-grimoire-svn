@@ -2,5 +2,3 @@ inherit  xemacs
    VERSION=( "1.16" )
     SOURCE="xemacs/packages/edict-$VERSION-pkg.tar.gz"
       DESC="$SPELL provides Lisp interface to EDICT."
-"
-
