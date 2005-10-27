@@ -1,0 +1,6 @@
+inherit  perl--modules
+   VERSION=( "0.16" )
+    SOURCE="T/TJ/TJENNESS/File-Temp-$VERSION.tar.gz"
+  HOMEPAGE="$HOMEPAGE/search?dist=File-Temp"
+  ESTIMATE="10"
+      DESC="$SPELL provides functions for generating temporary files"

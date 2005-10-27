@@ -5,3 +5,7 @@ inherit  perl--modules
        REQ="openssl perl"
   ESTIMATE="43"
       DESC="$SPELL is an OpenSSL glue that provides LWP https support"
+
+build() {
+  true  |  perl_module_build
+}

@@ -20,29 +20,16 @@ SOAP interface
 "
 
 perl_module_build()  {
-  perl  Makefile.PL $1      &&
+  perl  Makefile.PL $@      &&
   make  "OPTIMIZE=$CFLAGS"  &&
   prepare_install           &&
   make  install
 }
 
-SDL_Perl_build()  {
-  ./configure  $OPTS  &&
-  make                &&
-  prepare_install     &&
-  make  install
-}
-
 build()  {
   case  $SPELL  in
-     perl--modules)		echo "$SPELL installed." 	;;
-     perl--HTML-Parser|		\
-     perl--Inline)	yes   |  perl_module_build 	;;
-     perl--libwww)	true  |  perl_module_build -n	;;
-     perl--crypt-ssleay|	\
-     perl--soap-lite)	true  |  perl_module_build	;;
-     perl--SDL_Perl)		SDL_Perl_build		;;
-     *)				perl_module_build		;;
+     perl--modules)		 echo "$SPELL installed." 	;;
+     *)				 perl_module_build		;;
   esac
 }      
 

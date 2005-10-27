@@ -22,3 +22,10 @@ inherit  perl--modules
       DESC="$SPELL is the glue that binds perl to SDL
 $SPELL is a perl module that will allow Perl code to use SDL.
 "
+
+build() {
+  ./configure  $OPTS  &&
+  make                &&
+  prepare_install     &&
+  make  install
+}

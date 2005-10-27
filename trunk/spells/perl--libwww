@@ -14,3 +14,7 @@ and functions that allow you to write WWW clients. The library also
 contain modules that are of more general use and even classes that
 help you implement simple HTTP servers.
 "
+
+build() {
+  true  |  perl_module_build  -n
+}

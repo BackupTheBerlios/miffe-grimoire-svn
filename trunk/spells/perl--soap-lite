@@ -13,3 +13,7 @@ inherit  perl--modules
       DESC="$SPELL is a collection of Perl modules providing interface to the SOAP
 (Simple Object Access Protocol) both on client and server side.
 "
+
+build() {
+  true  |  perl_module_build
+}

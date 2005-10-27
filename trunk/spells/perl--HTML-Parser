@@ -5,3 +5,7 @@ inherit  perl--modules
        REQ="perl perl--HTML-Tagset"
   ESTIMATE="40"
       DESC="$SPELL provides modules that parse and extract information from HTML documents"
+
+build() {
+  yes  |  perl_module_build
+}

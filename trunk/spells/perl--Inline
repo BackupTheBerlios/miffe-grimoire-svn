@@ -5,3 +5,7 @@ inherit  perl--modules
        REQ=( "perl  perl--Digest-MD5  perl--Parse-RecDescent" )
   ESTIMATE="49"
       DESC="$SPELL allows to write Perl subroutines in other programming languages."
+
+build() {
+  yes  |  perl_module_build
+}
