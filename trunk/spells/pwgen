@@ -7,4 +7,4 @@
            REQ=""
       ESTIMATE="16"
      FRESHMEAT="pwgen"
-          DESC="$SPELL generates passwords easy to memorize by a human"
+          DESC="$SPELL generates secure passwords easy to memorize by a human"
