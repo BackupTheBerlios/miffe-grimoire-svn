@@ -9,6 +9,15 @@
           DESC="gv allows to view and navigate through PostScript and PDF docs
 on an X display by providing a user interface for the ghostscript interpreter."
 
+
+install_man() {
+  if  [ -f doc/gv.man ]; then 
+	install -m 0644 doc/gv.man /usr/X11R6/man/man1/gv.1
+  else
+	true
+  fi
+}
+
 function build() {
   sed -i "s:/usr/local:/usr:" config.Unix
   echo "#define CONVERT_INCLUDE_DIRECTIVES" >> config.Unix
@@ -18,6 +27,6 @@ function build() {
   make						&&
   prepare_install				&&
   make install					&&
-  make install.man				&&
+  install_man					&&
   make install.doc
 }
