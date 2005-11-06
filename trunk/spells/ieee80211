@@ -1,0 +1,23 @@
+   VERSION=( "1.1.6" "1.0.3" )
+  CATEGORY="network kernel"
+ ATTRIBUTE="driver linux-26-module"
+    SOURCE="ieee80211/ieee80211-$VERSION.tgz"
+       URL="$SOURCEFORGE_URL"
+  HOMEPAGE="http://ieee80211.sourceforge.net"
+       REQ=""
+  ESTIMATE="32"
+      DESC="$SPELL provides a generic ieee80211 networking stack for the kernel
+"
+
+
+build() {
+ KVER=$( installed_version $( get_provider linux-kernel ) )
+ PINC=/lib/modules/${KVER}/include
+
+ sed  -i "s:^KVER:#KVER:"  Makefile				&&
+ sed  -i "s:/sbin/depmod -a:/sbin/depmod -a $KVER:"  Makefile	&&
+ true  						|  
+ make	 KVER=$KVER  IEEE80211_INC=$PINC	&&
+ prepare_install				&&
+ make  install  KVER=$KVER  IEEE80211_INC=$PINC
+}

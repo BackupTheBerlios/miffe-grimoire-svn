@@ -1,0 +1,14 @@
+   VERSION=( "0.6.0" )
+  CATEGORY="utility"
+ ATTRIBUTE="console new"
+    SOURCE="qingy/qingy-$VERSION.tar.bz2"
+       URL="$SOURCEFORGE_URL"
+  HOMEPAGE="http://qingy.sourceforge.net"
+       REQ="zlib DirectFB openssl"
+  ESTIMATE="165"
+      DESC="$SPELL is a replacement for getty
+It uses DirectFB to provide a fast, nice GUI without the 
+overhead of the X Window System. It allows the user to log
+in and start the session of his choice (text console, 
+gnome, kde, wmaker, fluxbox, ...).
+"
