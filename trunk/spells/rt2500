@@ -11,12 +11,18 @@ based on rt2500 chipset.
 "
 
 build() {
+ KVER=$( installed_version $( get_provider linux-kernel ) )
+ KERNDIR=/lib/modules/$KVER/build
+ MODDIR=/lib/modules/$KVER/extra
+
+
  cd  Module		&&
  cp  README  ..		&&
+ sed  -i "s:/sbin/depmod -a:/sbin/depmod -a $KVER:"  Makefile	&&
  
- make			&&
- prepare_install	&&
- make install		&&
+ make  KERNDIR=$KERNDIR MODDIR=$MODDIR			&&
+ prepare_install					&&
+ make  KERNDIR=$KERNDIR MODDIR=$MODDIR  install		&&
 
  ( if echo $OPTS | grep -q "qt-x11-free" ; then
 	cd  ../Utilitys					&&
