@@ -1,4 +1,4 @@
-       VERSION=( "1.276" "1.250" "1.219" "1.161" "1.151" )
+       VERSION=( "1.297" "1.276" "1.250" "1.219" "1.161" "1.151" )
       CATEGORY="digital-camera graphic"
      ATTRIBUTE="console utility  new"
 #        SOURCE="sources/dcraw"

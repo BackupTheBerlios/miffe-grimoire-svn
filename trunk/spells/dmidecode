@@ -3,7 +3,7 @@
  ATTRIBUTE="console"
   HOMEPAGE="http://www.nongnu.org/dmidecode"
        URL="http://savannah.nongnu.org/download"
-    SOURCE="dmidecode/dmidecode-${VERSION}"
+    SOURCE="dmidecode/dmidecode-${VERSION}.tar.bz2"
   ESTIMATE="14"
       DESC="dmidecode reports information about your hardware
 as described in your system BIOS according to SMBIOS/DMI
