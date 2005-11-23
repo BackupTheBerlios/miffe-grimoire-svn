@@ -1,7 +1,7 @@
-    VERSION=( "3.5.1" )
+    VERSION=( "3.6.0-p1" "3.5.1" )
    CATEGORY="data science library"
   ATTRIBUTE="new library"
-     SOURCE="netcdf-$VERSION.tar.Z"
+     SOURCE="netcdf-$VERSION.tar.gz"
    HOMEPAGE="http://www.unidata.ucar.edu/packages/netcdf"
         URL="ftp://ftp.unidata.ucar.edu/pub/netcdf
              ftp://www.gfd-dennou.org/arch/netcdf/unidata-mirror"
@@ -18,17 +18,18 @@ scientific data.
 "
 
 function build() {
-	export	CPPFLAGS="-Df2cFortran"
-	export	FFLAGS="-Wno-globals"
+# export	CPPFLAGS="-DNDEBUG -DpgiFortran"
+  export	CPPFLAGS="-DpgiFortran"
+# export	CPPFLAGS="-Df2cFortran"
 
-	cd src					&&
-	./configure  --build=$BUILD		\
-		     --prefix=/usr		\
-		     --sysconfdir=/etc		\
-		     --localstatedir=/var	\
-		     $OPTS			&&
-	make					&&
-	make  test				&&
-	prepare_install				&&
-	make  install
+ cd src					&&
+ ./configure 	--build=$BUILD		\
+		--prefix=/usr		\
+		--sysconfdir=/etc	\
+		--localstatedir=/var	\
+		$OPTS			&&
+ make					&&
+ make  test				&&
+ prepare_install				&&
+ make  install
 }

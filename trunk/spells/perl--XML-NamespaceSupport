@@ -1,0 +1,10 @@
+inherit  perl--modules
+   VERSION=( "1.09" )
+    SOURCE="R/RB/RBERJON/XML-NamespaceSupport-$VERSION.tar.gz"
+  HOMEPAGE="$HOMEPAGE/search?dist=XML::NamespaceSupport"
+       REQ=""
+  ESTIMATE="10"
+      DESC="$SPELL is a perl module to process namespaced XML names (unames)
+from within any application that may need them. It also
+helps maintain a prefix to namespace URI map, and provides
+a number of basic checks."

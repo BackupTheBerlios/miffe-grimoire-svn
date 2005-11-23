@@ -4,6 +4,7 @@
         SOURCE="bbmail-$VERSION"
            URL="http://bbtools.windsofstorm.net/sources"
       HOMEPAGE="http://bbtools.windsofstorm.net"
+           REQ="x11"
      FRESHMEAT="bbmail"
           DESC="Bbmail is a mail-checker with a Blackbox look and feel.
 Although it was designed for Blackbox it should also work with 
