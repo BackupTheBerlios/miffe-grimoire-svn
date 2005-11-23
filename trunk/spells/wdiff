@@ -3,6 +3,7 @@
  ATTRIBUTE="new console utility"
   HOMEPAGE="http://www.gnu.org/software/wdiff/wdiff.html"
        URL="http://ftp.gnu.org/pub/gnu/wdiff"
+    SOURCE="wdiff-$VERSION.tar.gz"
        REQ="diffutils ncurses"
   ESTIMATE="21"
       DESC="wdiff is a front end to diff for comparing on a word per word basis.
