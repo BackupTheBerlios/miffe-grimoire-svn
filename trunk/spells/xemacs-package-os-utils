@@ -1,6 +1,6 @@
 inherit  xemacs
    VERSION=( "1.36" "1.35" "1.34" "1.32" "1.31" "1.30" )
-    SOURCE="xemacs/packages/os-utils-$VERSION-pkg"
+    SOURCE="xemacs/packages/os-utils-$VERSION-pkg.tar.gz"
       DESC="$SPELL provides miscellaneous O/S utilities.
 "
 

@@ -1,6 +1,6 @@
 inherit  xemacs
    VERSION=( "1.28" "1.26" "1.25" )
-    SOURCE="xemacs/packages/pc-$VERSION-pkg"
+    SOURCE="xemacs/packages/pc-$VERSION-pkg.tar.gz"
       DESC="$SPELL provides PC style interface emulation.
 "
 
