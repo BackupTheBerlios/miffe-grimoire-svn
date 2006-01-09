@@ -13,7 +13,7 @@
 
 . /lib/lsb/init-functions
 
-PIDF="/var/lock/subsys/denyhosts"
+PIDF="/var/run/denyhosts.pid"
 SERV="python"
 NAME="denyhosts"
 
