@@ -1,7 +1,7 @@
-    VERSION=( "1.1.9" "1.1.8" "1.0.5" )
+    VERSION=( "1.2.7" "1.1.9" "1.1.8" "1.0.5" )
    CATEGORY="security"
   ATTRIBUTE="new console utility"
-     SOURCE="rkhunter-$VERSION"
+     SOURCE="rkhunter-$VERSION.tar.gz"
    HOMEPAGE="http://www.rootkit.nl"
         URL="http://downloads.rootkit.nl"
 	REQ=( "bash wget perl lsof"

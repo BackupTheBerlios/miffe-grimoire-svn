@@ -1,9 +1,9 @@
-   VERSION=( "5.3.1" )
+   VERSION=( "5.5.3" "5.3.1" )
   CATEGORY="graphic library science"
  ATTRIBUTE="new console x11"
   HOMEPAGE="http://plplot.sourceforge.net"
        URL="$SOURCEFORGE_URL"
-    SOURCE="plplot/plplot-${VERSION}"
+    SOURCE="plplot/plplot-${VERSION}.tar.gz"
        REQ=( "x11 perl libpng jpeg libtool tcl tk gd" 
              "numarray:::for Python interface to plplot" )
   ESTIMATE="557"

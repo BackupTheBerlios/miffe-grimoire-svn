@@ -1,7 +1,7 @@
-    VERSION=( "4.3.3" "4.3.2" )
+    VERSION=( "4.4.0" "4.3.3" "4.3.2" )
    CATEGORY="graphic data science"
   ATTRIBUTE="new x11 concurrent"
-     SOURCE="dx-$VERSION"
+     SOURCE="dx-$VERSION.tar.gz"
    HOMEPAGE="http://www.opendx.org"
     	URL="http://opendx.npaci.edu/source"
 	REQ=( "lesstif autoconf tiff"

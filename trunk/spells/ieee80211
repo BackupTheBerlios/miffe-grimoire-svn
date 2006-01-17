@@ -1,4 +1,4 @@
-   VERSION=( "1.1.6" "1.0.3" )
+   VERSION=( "1.1.9" "1.1.6" "1.0.3" )
   CATEGORY="network kernel"
  ATTRIBUTE="driver linux-26-module"
     SOURCE="ieee80211/ieee80211-$VERSION.tgz"

@@ -1,5 +1,5 @@
 inherit  perl--modules
-   VERSION=( "0.89" )
+   VERSION=( "0.90" "0.89" )
     SOURCE="A/AU/AUTRIJUS/PAR-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=PAR"
        REQ=( "perl perl--File-Temp perl--Compress-Zlib perl--Archive-Zip perl--PAR-Dist perl--Digest-SHA perl--Module-Signature" )

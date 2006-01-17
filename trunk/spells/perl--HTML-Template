@@ -1,5 +1,5 @@
 inherit  perl--modules
-   VERSION=( "2.7" )
+   VERSION=( "2.8" "2.7" )
   CATEGORY="$CATEGORY web"
   HOMEPAGE="$HOMEPAGE/search?dist=HTML-Template"
     SOURCE="S/SA/SAMTREGAR/HTML-Template-$VERSION"

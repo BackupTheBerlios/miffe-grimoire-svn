@@ -1,4 +1,4 @@
-   VERSION=( "2.0.0-b2" )
+   VERSION=( "2.0.0-b3" "2.0.0-b2" )
   CATEGORY="kernel network"
  ATTRIBUTE="driver linux-26-module new"
     SOURCE="rt2400/$SPELL-$VERSION.tar.gz"

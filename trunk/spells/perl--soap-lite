@@ -1,7 +1,7 @@
 inherit  perl--modules
-   VERSION=( "0.60a" )
+   VERSION=( "0.66.1" "0.60a" )
     SOURCE="/B/BY/BYRNE/SOAP/SOAP-Lite-$VERSION"
-  HOMEPAGE="$HOMEPAGE/search?dist=URI"
+  HOMEPAGE="$HOMEPAGE/search?dist=SOAP-Lite"
        REQ=( "perl perl--XML-Parser"
           "perl--crypt-ssleay:::for LWP https support"
           "perl--io-socket-ssl:::for interface to SSL sockets"

@@ -1,7 +1,7 @@
  VERSION=( "0.1.6" "0.1.5" )
 CATEGORY="dockapps"
      URL="http://www.markstaggs.net/wmmemload/"
-  SOURCE="$SPELL-$VERSION"
+  SOURCE="$SPELL-$VERSION.tar.gz"
 HOMEPAGE="http://www.markstaggs.net/"
      REQ="x11 automake"
     DESC="wmmemload is a dockapp monitors memory/swap usage
