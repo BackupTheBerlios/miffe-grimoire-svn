@@ -2,7 +2,7 @@
     IGNORE="\-elc|\-info|\-src"
   CATEGORY="editor"
  ATTRIBUTE="console x11"
-    SOURCE="xemacs-21.4/xemacs-$VERSION"
+    SOURCE="xemacs-21.4/xemacs-$VERSION.tar.gz"
        URL="ftp://ftp.xemacs.org"
   HOMEPAGE="http://www.xemacs.org"
        REQ=( "imlib zlib xemacs-package-efs xemacs-package-base"
