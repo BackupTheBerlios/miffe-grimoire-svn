@@ -4,8 +4,10 @@
      SOURCE="cdf${VERSION:0:1}${VERSION:2:1}/unix/cdf${VERSION:0:1}${VERSION:2:1}-dist-all"
    HOMEPAGE="http://www.unidata.ucar.edu/packages/netcdf"
         URL="ftp://nssdcftp.gsfc.nasa.gov/standards/cdf/dist"
-	REQ="ncurses"
-   ESTIMATE="88"
+	REQ=( "ncurses"
+              "jdk:-java_api::to make CDF Java API available"
+            )
+   ESTIMATE="90"
        DESC="cdf is a library for CDF data format
 cdf is a library for the Common Data Format (CDF) created
 by National Space Science Data Center (NSSDC). CDF is 
@@ -25,23 +27,59 @@ are not burdened with performing low level I/Os to
 physically format and unformat the data file. 
 "
 
-function build() {
-	INSTALLDIR=/usr
-	DEFS=src/definitions/definitions
+make_java_api() {
+  if echo $OPTS | grep -q java_api ; then
+    echo "--> Compiling java_api"
 
-	LINE=$( grep -n "^export CDF_BASE" $DEFS.B | cut -d ":" -f 1 )
-	sed  -i "${LINE},${LINE}d"	$DEFS.B
-	sed  -i "${LINE}iexport CDF_BASE; CDF_BASE=$INSTALLDIR"	$DEFS.B
-	LINE=$( grep -n "^setenv CDF_BASE" $DEFS.C | cut -d ":" -f 1 )
-	sed  -i "${LINE},${LINE}d"	$DEFS.C
-	sed  -i "${LINE}isetenv CDF_BASE $INSTALLDIR"	$DEFS.C
-	LINE=$( grep -n "^export CDF_BASE" $DEFS.K | cut -d ":" -f 1 )
-	sed  -i "${LINE},${LINE}d"	$DEFS.K
-	sed  -i "${LINE}iexport CDF_BASE=$INSTALLDIR"	$DEFS.K
+    CDF_BASE=$(pwd)/src
+    JAVA_INC=/opt/jdk/include
+    if [ ! -d $JAVA_INC ]; then
+	echo "ERROR: Directory $JAVA_INC is missing"
+	return 1
+    fi
 
-		
-	make  OS=linux ENV=gnu all		&&
-	make  test				&&
-	prepare_install				&&
-	make  INSTALLDIR=/usr install
+    cd cdfjava/jni				&&
+    gcc -c cdfNativeLibrary.c -I${CDF_BASE}/include -I${JAVA_INC}	\
+        -I${JAVA_INC}/linux -o cdfNativeLibrary.o			&&
+    ld  -shared cdfNativeLibrary.o -o ../lib/libcdfNativeLibrary.so	\
+        -L${CDF_BASE}/lib -lc -lm -lcdf					&&
+    cd  -
+  else 
+    echo "WARNING: java_api not compiled"
+  fi
 }
+
+install_java_api() {
+  if echo $OPTS | grep -q java_api ; then
+    echo "--> Installing java_api"
+    CLASS_DIR=/usr/share/$SPELL/classes
+    [ ! -d $CLASS_DIR ]  &&  mkdir -p $CLASS_DIR
+    install -m 644  cdfjava/classes/cdfjava.jar         $CLASS_DIR	&&
+    install -m 755  cdfjava/lib/libcdfNativeLibrary.so  /usr/lib
+  else
+    echo "WARNING: java_api not installed"
+  fi
+}
+
+function build() {
+  INSTALLDIR=/usr
+  DEFS=src/definitions/definitions
+
+  LINE=$( grep -n "^export CDF_BASE" $DEFS.B | cut -d ":" -f 1 )
+  sed  -i "${LINE},${LINE}d"	$DEFS.B
+  sed  -i "${LINE}iexport CDF_BASE; CDF_BASE=$INSTALLDIR"	$DEFS.B
+  LINE=$( grep -n "^setenv CDF_BASE" $DEFS.C | cut -d ":" -f 1 )
+  sed  -i "${LINE},${LINE}d"	$DEFS.C
+  sed  -i "${LINE}isetenv CDF_BASE $INSTALLDIR"	$DEFS.C
+  LINE=$( grep -n "^export CDF_BASE" $DEFS.K | cut -d ":" -f 1 )
+  sed  -i "${LINE},${LINE}d"	$DEFS.K
+  sed  -i "${LINE}iexport CDF_BASE=$INSTALLDIR"	$DEFS.K
+		
+  make  OS=linux ENV=gnu all		&&
+  make_java_api				&&
+  make  test				&&
+  prepare_install			&&
+  make  INSTALLDIR=/usr install		&&
+  install_java_api
+}
+# Origin grimoire-miffe
