@@ -1,7 +1,7 @@
 inherit  perl--modules
    VERSION=( "0.90" )
   HOMEPAGE="http://search.cpan.org/search?dist=XWhois"
-    SOURCE="V/VI/VIPUL/Net-XWhois-$VERSION"
+    SOURCE="V/VI/VIPUL/${SPELL#perl--}-$VERSION.tar.gz"
   ESTIMATE="10"
   EPROVIDE="XWhois"
       DESC="$SPELL provides Whois client interface for Perl5."

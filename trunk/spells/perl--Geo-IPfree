@@ -1,7 +1,7 @@
 inherit  perl--modules
    VERSION=( "0.2" )
   HOMEPAGE="$HOMEPAGE/search?dist=Geo-IPfree"
-    SOURCE="G/GM/GMPASSOS/Geo-IPfree-$VERSION"
+    SOURCE="G/GM/GMPASSOS/${SPELL#perl--}-$VERSION.tar.gz"
   ESTIMATE="13"
   EPROVIDE="Geo-IPfree"
       DESC="$SPELL provides module that looks up country of IP Address.

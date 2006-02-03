@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "2.14" )
-    SOURCE="G/GR/GRANTM/XML-Simple-$VERSION"
+    SOURCE="G/GR/GRANTM/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=XML::Simple"
        REQ="perl--XML-Parser"
   ESTIMATE="14"

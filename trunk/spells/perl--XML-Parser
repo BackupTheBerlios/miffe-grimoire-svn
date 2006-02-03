@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "2.34" )
-    SOURCE="M/MS/MSERGEANT/XML-Parser-$VERSION"
+    SOURCE="M/MS/MSERGEANT/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=XML::Parser"
        REQ="expat perl"
   ESTIMATE="54"

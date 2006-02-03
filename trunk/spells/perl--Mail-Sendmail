@@ -2,7 +2,7 @@ inherit  perl--modules
    VERSION=( "0.79" )
   CATEGORY="$CATEGORY email"
   HOMEPAGE="$HOMEPAGE/search?dist=Mail-Sendmail"
-    SOURCE="M/MI/MIVKOVIC/Mail-Sendmail-$VERSION"
+    SOURCE="M/MI/MIVKOVIC/${SPELL#perl--}-$VERSION.tar.gz"
   ESTIMATE="10"
   EPROVIDE="Mail-Sendmail"
       DESC="$SPELL is a simple module to send mail.

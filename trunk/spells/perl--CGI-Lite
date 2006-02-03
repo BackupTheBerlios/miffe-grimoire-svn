@@ -2,7 +2,7 @@ inherit  perl--modules
    VERSION=( "2.001-emergencyrelease" )
   CATEGORY="$CATEGORY web"
   HOMEPAGE="$HOMEPAGE/search?dist=CGI-Lite"
-    SOURCE="A/AN/ANDK/CGI-Lite-$VERSION"
+    SOURCE="A/AN/ANDK/${SPELL#perl--}-$VERSION.tar.gz"
   ESTIMATE="13"
   EPROVIDE="CGI-Lite"
       DESC="$SPELL is a perl module to process and decode WWW forms and cookie

@@ -2,7 +2,7 @@ inherit  perl--modules
    VERSION=( "5.44" "5.42a" )
   CATEGORY="$CATEGORY time"
   HOMEPAGE="$HOMEPAGE/search?dist=DateManip"
-    SOURCE="S/SB/SBECK/DateManip-$VERSION"
+    SOURCE="S/SB/SBECK/${SPELL#perl--}-$VERSION.tar.gz"
   ESTIMATE="10"
   EPROVIDE="DateManip"
       DESC="$SPELL is a perl module for easily parsing and manipulating dates

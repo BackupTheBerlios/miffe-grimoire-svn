@@ -2,7 +2,7 @@ inherit  perl--modules
    VERSION=( "2.4.2" "2.4.1" )
   CATEGORY="$CATEGORY science"
   HOMEPAGE="$HOMEPAGE/search?dist=PDL"
-    SOURCE="C/CS/CSOE/PDL-$VERSION"
+    SOURCE="C/CS/CSOE/${SPELL#perl--}-$VERSION.tar.gz"
        REQ=( "perl  netpbm  perl--Inline  perl--Term-ReadLine-Gnu  
               perl--Astro-FITS-Header  perl--Text-Balanced
               perl--PGPLOT  fftw-v2  gsl  ncurses" )

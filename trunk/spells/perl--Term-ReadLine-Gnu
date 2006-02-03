@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "1.15" )
-    SOURCE="H/HA/HAYASHI/Term-ReadLine-Gnu-$VERSION"
+    SOURCE="H/HA/HAYASHI/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=Term::ReadLine::Gnu"
        REQ="perl readline ncurses"
   ESTIMATE="25"

@@ -5,7 +5,7 @@ inherit  perl--modules
   CATEGORY="$CATEGORY graphic"
  ATTRIBUTE="perl-module library x11"
   HOMEPAGE="$HOMEPAGE/search?dist=SDL_Perl"
-    SOURCE="D/DG/DGOEHRIG/SDL_Perl-$VERSION"
+    SOURCE="D/DG/DGOEHRIG/${SPELL#perl--}-$VERSION.tar.gz"
        REQ=( "perl SDL SDL_mixer SDL_image"
           "glut::-GL -GLU: for OpenGL support"
           "libpng::-png:for png support"

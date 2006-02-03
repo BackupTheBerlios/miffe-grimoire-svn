@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "2.19" "2.18" )
-    SOURCE="K/KG/KGB/PGPLOT-$VERSION"
+    SOURCE="K/KG/KGB/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=PGPLOT"
        REQ=( "perl pgplot perl--ExtUtils-F77" )
   ESTIMATE="29"

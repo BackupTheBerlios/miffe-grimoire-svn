@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "5.805" "5.803" "5.802" "5.801" "5.800" )
-    SOURCE="G/GA/GAAS/libwww-perl-$VERSION"
+    SOURCE="G/GA/GAAS/libwww-perl-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=libwww-perl"
        REQ=( "" 
 	  "perl--HTML-Parser:::for modules that parse and extract information from HTML documents."

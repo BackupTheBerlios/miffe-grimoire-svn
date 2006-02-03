@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "0.44" )
-    SOURCE="I/IN/INGY/Inline-$VERSION"
+    SOURCE="I/IN/INGY/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=Inline"
        REQ=( "perl  perl--Digest-MD5  perl--Parse-RecDescent" )
   ESTIMATE="49"

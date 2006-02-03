@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "0.51" )
-    SOURCE="C/CH/CHAMAS/Crypt-SSLeay-$VERSION"
+    SOURCE="C/CH/CHAMAS/Crypt-SSLeay-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=Crypt-SSLeay"
        REQ="openssl perl"
   ESTIMATE="43"

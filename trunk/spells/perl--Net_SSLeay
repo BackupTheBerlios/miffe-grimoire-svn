@@ -1,8 +1,8 @@
 inherit  perl--modules
-   VERSION=( "1.25" )
+   VERSION=( "1.30" "1.25" )
   CATEGORY="$CATEGORY encryption"
   HOMEPAGE="$HOMEPAGE/search?dist=Net_SSLeay"
-    SOURCE="S/SA/SAMPO/Net_SSLeay.pm-$VERSION"
+    SOURCE="S/SA/SAMPO/Net_SSLeay.pm-$VERSION.tar.gz"
        REQ="perl openssl"
   ESTIMATE="10"
   EPROVIDE="Net_SSLeay"

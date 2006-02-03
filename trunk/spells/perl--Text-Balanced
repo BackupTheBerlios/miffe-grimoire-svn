@@ -1,6 +1,6 @@
 inherit  perl--modules
    VERSION=( "1.95" )
-    SOURCE="D/DC/DCONWAY/Text-Balanced-$VERSION"
+    SOURCE="D/DC/DCONWAY/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=Text::Balanced"
   ESTIMATE="10"
       DESC="$SPELL extracts delimited text sequences from strings."

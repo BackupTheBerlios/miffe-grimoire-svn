@@ -5,7 +5,7 @@
        URL="http://www.cpan.org/authors/id"
        REQ=( "perl"
           "perl--PDL:::for the Perl Data Language"
-          "perl--soap-lite:::for interface to the SOAP"
+          "perl--SOAP-Lite:::for interface to the SOAP"
           )
   ESTIMATE="5"
     ASSUME="off"
