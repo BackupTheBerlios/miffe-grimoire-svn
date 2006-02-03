@@ -1,7 +1,7 @@
       VERSION=( "0.3" )
       CATEGORY="dockapps"
      ATTRIBUTE="x11"
-        SOURCE="wmab-$VERSION"
+        SOURCE="wmab-$VERSION.tar.gz"
            URL="http://web.tiscali.it/kalem/wmab"
       HOMEPAGE="http://web.tiscali.it/kalem/dockapps.html"
            REQ="x11"

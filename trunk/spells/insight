@@ -1,10 +1,10 @@
-   VERSION=( "6.1" )
+   VERSION=( "6.4" "6.1" )
     IGNORE="1999"
   CATEGORY="development"
  ATTRIBUTE="x11 client"
-    SOURCE="insight-$VERSION"
+    SOURCE="insight-$VERSION.tar.bz2"
   HOMEPAGE="http://sources.redhat.com/insight/"
-       URL="ftp://sources.redhat.com/pub/gdb/releases"
+       URL="ftp://sourceware.org/pub/insight/releases"
        REQ="tcl tk"
  FRESHMEAT="insight"
   EPROVIDE="gdb"

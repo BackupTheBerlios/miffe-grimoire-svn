@@ -1,7 +1,7 @@
       VERSION=( "1.9" "1.8" "1.7" "1.6" )
       CATEGORY="monitor utility"
      ATTRIBUTE="console"
-        SOURCE="spicctrl-$VERSION"
+        SOURCE="spicctrl-$VERSION.tar.bz2"
            URL="http://popies.net/sonypi"
       HOMEPAGE="http://popies.net/sonypi"
       ESTIMATE="6"

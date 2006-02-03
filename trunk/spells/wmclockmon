@@ -2,7 +2,7 @@
  CATEGORY="dockapps"
 ATTRIBUTE="x11 utility"
       URL="http://tnemeth.free.fr/projets/programmes/"
-   SOURCE="$SPELL-$VERSION"
+   SOURCE="$SPELL-$VERSION.tar.gz"
  HOMEPAGE="http://tnemeth.free.fr/projets/dockapps.html"
       REQ="x11 glib-v1.2 gtk+-v1.2"
  ESTIMATE="42"

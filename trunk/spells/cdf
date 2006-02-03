@@ -1,7 +1,7 @@
     VERSION=( "2.7" )
    CATEGORY="data science library"
   ATTRIBUTE="new library"
-     SOURCE="cdf${VERSION:0:1}${VERSION:2:1}/unix/cdf${VERSION:0:1}${VERSION:2:1}-dist-all"
+     SOURCE="cdf${VERSION:0:1}${VERSION:2:1}/unix/cdf${VERSION:0:1}${VERSION:2:1}-dist-all.tar.gz"
    HOMEPAGE="http://www.unidata.ucar.edu/packages/netcdf"
         URL="ftp://nssdcftp.gsfc.nasa.gov/standards/cdf/dist"
 	REQ=( "ncurses"

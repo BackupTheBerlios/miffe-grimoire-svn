@@ -1,5 +1,5 @@
-    VERSION="0.31.1"
-     SOURCE="$SPELL/$SPELL-$VERSION"
+    VERSION=( "0.31.1" )
+     SOURCE="$SPELL/$SPELL-$VERSION.tar.gz"
         URL="$SOURCEFORGE_URL"
    HOMEPAGE="http://autotrace.sourceforge.net/"
         REQ="x11 libxml2 jpeg tiff"

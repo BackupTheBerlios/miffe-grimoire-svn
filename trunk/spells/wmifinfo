@@ -1,7 +1,7 @@
       VERSION=( "0.09" "0.08" "0.07" "0.06" )
       CATEGORY="dockapps"
      ATTRIBUTE="x11"
-        SOURCE="wmifinfo-$VERSION"
+        SOURCE="wmifinfo-$VERSION.tgz"
            URL="http://www.zevv.nl/wmifinfo"
       HOMEPAGE="http://www.zevv.nl/wmifinfo"
            REQ="x11"

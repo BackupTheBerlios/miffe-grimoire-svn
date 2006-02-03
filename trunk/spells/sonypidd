@@ -1,8 +1,10 @@
-      VERSION=( "20031123" )
+      VERSION=( "0.2" "20031123" )
       CATEGORY="utility"
      ATTRIBUTE="console new"
-        SOURCE="%7Edeforest/sonypidd"
-           URL="http://www.boulder.swri.edu"
+#        SOURCE="%7Edeforest/sonypidd"
+#           URL="http://www.boulder.swri.edu"
+        SOURCE="sw/sonypidd-$VERSION"
+           URL="http://linux.highsphere.net"
       HOMEPAGE="http://www.boulder.swri.edu/%7Edeforest/sonypidd"
            REQ="perl aumix sox spicctrl sonypid"
 	   DIR="sonypid-$VERSION"

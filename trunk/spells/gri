@@ -1,7 +1,7 @@
-    VERSION=( "2.12.9" "2.12.8" "2.12.7" )
+    VERSION=( "2.12.10" "2.12.9" "2.12.8" "2.12.7" )
    CATEGORY="graphic science"
   ATTRIBUTE="new console"
-     SOURCE="gri/gri-$VERSION"
+     SOURCE="gri/gri-$VERSION.tgz"
    HOMEPAGE="http://gri.sourceforge.net"
         URL="$SOURCEFORGE_URL"
 	REQ=( "teTeX texinfo ImageMagick ghostscript netcdf"
@@ -26,18 +26,18 @@ mathematical symbols.
 "
 
 function build() {
-	LISPDIR=/usr/lib/xemacs/xemacs-packages/lisp
+ LISPDIR=/usr/lib/xemacs/xemacs-packages/lisp
 
-	./configure  --build=$BUILD		\
-		     --prefix=/usr		\
-		     --sysconfdir=/etc		\
-		     --localstatedir=/var	\
-		     --enable-frepo		\
-		     $OPTS			&&
-	make					&&
-	make  check				&&
-	prepare_install				&&
-	make  install				&&
-	[ -d $LISPDIR ]  &&  
-		/usr/bin/install  -m 644  src/gri-mode.el  $LISPDIR
+ ./configure  --build=$BUILD		\
+ 	     --prefix=/usr		\
+	     --sysconfdir=/etc		\
+	     --localstatedir=/var	\
+	     --enable-frepo		\
+	     $OPTS			&&
+ make					&&
+ make  check				&&
+ prepare_install				&&
+ make  install				&&
+ [ -d $LISPDIR ]  &&  
+      /usr/bin/install  -m 644  src/gri-mode.el  $LISPDIR
 }

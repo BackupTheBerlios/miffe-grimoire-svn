@@ -1,7 +1,7 @@
     VERSION=( "1.1.2" )
    CATEGORY="security log"
   ATTRIBUTE="new console utility"
-     SOURCE="logcheck/logcheck-$VERSION"
+     SOURCE="logcheck/logcheck-$VERSION.tar.gz"
    HOMEPAGE="http://sourceforge.net/projects/logcheck"
         URL="$SOURCEFORGE_URL"
 	REQ="grep email-client"

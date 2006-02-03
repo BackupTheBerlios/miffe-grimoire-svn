@@ -1,6 +1,6 @@
-  VERSION="4.4.3"
+  VERSION=( "4.6.1" "4.4.3" )
    IGNORE="devel"
-   SOURCE="tilp/$SPELL-$VERSION"
+   SOURCE="tilp/$SPELL-$VERSION.tar.gz"
       URL="$SOURCEFORGE_URL"
       REQ="libtifiles"
  HOMEPAGE="http://lpg.ticalc.org/prj_tilp"

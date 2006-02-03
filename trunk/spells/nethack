@@ -1,6 +1,6 @@
-   VERSION=( "342" )
+   VERSION=( "343" "342" )
   CATEGORY="game"
-    SOURCE="nethack/nethack-$VERSION"
+    SOURCE="nethack/nethack-$VERSION-src.tgz"
   HOMEPAGE="http://nethack.org"
       URL="$SOURCEFORGE_URL"
  FRESHMEAT="nethack"

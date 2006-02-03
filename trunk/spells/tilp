@@ -1,6 +1,6 @@
-  VERSION="6.09"
+  VERSION=( "6.80" "6.09" )
    IGNORE="devel"
-   SOURCE="tilp/$SPELL-$VERSION"
+   SOURCE="tilp/$SPELL-$VERSION.tar.gz"
       URL="$SOURCEFORGE_URL"
       REQ="gtk+,v1.2 libticalcs libticables libtifiles"
  HOMEPAGE="http://lpg.ticalc.org/prj_tilp"

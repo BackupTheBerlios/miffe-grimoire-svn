@@ -1,7 +1,7 @@
        VERSION=( "0.8.3" "0.8.2" )
       CATEGORY="window-manager"
      ATTRIBUTE="x11"
-        SOURCE="bbmail-$VERSION"
+        SOURCE="bbmail-$VERSION.tar.gz"
            URL="http://bbtools.windsofstorm.net/sources"
       HOMEPAGE="http://bbtools.windsofstorm.net"
            REQ="x11"

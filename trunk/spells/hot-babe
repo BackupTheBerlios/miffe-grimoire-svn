@@ -2,7 +2,7 @@
       CATEGORY="utility"
      ATTRIBUTE="new x11"
       HOMEPAGE="http://dindinx.net/hotbabe"
-        SOURCE="downloads/hot-babe-$VERSION"
+        SOURCE="downloads/hot-babe-$VERSION.tar.bz2"
            URL="$HOMEPAGE"
            REQ="x11 gtk+ gdk-pixbuf"
       ESTIMATE="8"

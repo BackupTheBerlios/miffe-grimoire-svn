@@ -1,7 +1,7 @@
     VERSION=( "0.8.3" )
    CATEGORY="mail"
         URL="$SOURCEFORGE_URL"
-     SOURCE="$SPELL/$SPELL-$VERSION"
+     SOURCE="$SPELL/$SPELL-$VERSION.tar.gz"
    HOMEPAGE="http://elmo.sourceforge.net/"
         REQ="ncurses"
 SOURCEFORGE="elmo"

@@ -1,7 +1,7 @@
-  VERSION=( "2.2.3" )
+  VERSION=( "2.2.4" "2.2.3" )
    IGNORE="p7x"
       URL="ftp://platan.vc.cvut.cz/pub/linux/ncpfs/"
-   SOURCE="$SPELL-$VERSION"
+   SOURCE="$SPELL-$VERSION.tar.gz"
  HOMEPAGE="http://freshmeat.net/projects/ncpfs/"
 FRESHMEAT="ncpfs"
      DESC="ncpfs mounts volumes of NetWare servers

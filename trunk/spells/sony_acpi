@@ -1,7 +1,7 @@
       VERSION=( "0.1" )
       CATEGORY="kernel"
      ATTRIBUTE="driver linux-26-module"
-        SOURCE="sony_acpi"
+        SOURCE="sony_acpi.tar.gz"
            URL="http://popies.net/sonypi"
       HOMEPAGE="http://popies.net/sonypi"
       ESTIMATE="13"

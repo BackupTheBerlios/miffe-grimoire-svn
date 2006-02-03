@@ -2,7 +2,7 @@
       SAFE=( "6.5" )
   CATEGORY="log web"
  ATTRIBUTE="utility new"
-    SOURCE="files/awstats-$VERSION"
+    SOURCE="files/awstats-$VERSION.tar.gz"
        URL="http://awstats.sourceforge.net"
   HOMEPAGE="http://awstats.sourceforge.net"
        REQ=("perl httpd"

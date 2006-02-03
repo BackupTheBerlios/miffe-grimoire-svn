@@ -1,7 +1,7 @@
    VERSION=( "0.4" )
   CATEGORY="monitor utility"
  ATTRIBUTE="console"
-    SOURCE="i855crt/i855crt-$VERSION"
+    SOURCE="i855crt/i855crt-$VERSION.tar.gz"
        URL="$SOURCEFORGE_URL"
   HOMEPAGE="http://i855crt.sourceforge.net"
        REQ="x11"

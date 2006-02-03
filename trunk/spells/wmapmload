@@ -1,7 +1,7 @@
  VERSION=( "0.3.4" "0.3.3" )
 CATEGORY="dockapps"
      URL="http://tnemeth.free.fr"
-  SOURCE="projets/programmes/$SPELL-$VERSION"
+  SOURCE="projets/programmes/$SPELL-$VERSION.tar.gz"
 HOMEPAGE="http://tnemeth.free.fr/projets/dockapps.html"
      REQ="x11"
     DESC="wmapmload monitors your apm battery status."

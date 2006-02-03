@@ -3,7 +3,7 @@
  ATTRIBUTE="new console x11"
   HOMEPAGE="http://www.astro.caltech.edu/~tjp/pgplot/"
        URL="ftp://ftp.astro.caltech.edu"
-    SOURCE="pub/pgplot/pgplot${VERSION:0:3}"
+    SOURCE="pub/pgplot/pgplot${VERSION:0:3}.tar.gz"
        REQ=( "x11 perl libpng" )
   ESTIMATE="397"
       DESC="pgplot provides subroutine library for making simple scientific graphs.

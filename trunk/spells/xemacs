@@ -1,4 +1,4 @@
-   VERSION=( "21.4.18" "21.4.17" )
+   VERSION=( "21.4.19" "21.4.18" "21.4.17" )
     IGNORE="\-elc|\-info|\-src"
   CATEGORY="editor"
  ATTRIBUTE="console x11"

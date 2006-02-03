@@ -1,7 +1,7 @@
- VERSION=( "0.41" )
+ VERSION=( "0.5.1" "0.41" )
 CATEGORY="utility encryption"
      URL="http://www.pingx.net"
-  SOURCE="$SPELL/$SPELL-$VERSION"
+  SOURCE="$SPELL/$SPELL-$VERSION.tar.gz"
 HOMEPAGE="http://www.pingx.net/secpanel/"
      REQ="tcl tk openssh"
     DESC="secpanel is a frontend to ssh and scp

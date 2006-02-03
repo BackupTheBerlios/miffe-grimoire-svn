@@ -1,5 +1,5 @@
 inherit  perl--modules
-   VERSION=( "0.66.1" "0.60a" )
+   VERSION=( "0.67" "0.66.1" "0.60a" )
     SOURCE="/B/BY/BYRNE/SOAP/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=SOAP-Lite"
        REQ=( "perl perl--XML-Parser"

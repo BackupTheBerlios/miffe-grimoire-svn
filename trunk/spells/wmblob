@@ -2,7 +2,7 @@
  CATEGORY="dockapps"
 ATTRIBUTE="x11 utility"
       URL="http://www.dockapps.org/download.php/id"
-   SOURCE="541/$SPELL-$VERSION"
+   SOURCE="541/$SPELL-$VERSION.tar.bz2"
  HOMEPAGE="http://www.dockapps.org/file.php/id/155/"
       REQ="x11 gtk+"
  ESTIMATE="38"

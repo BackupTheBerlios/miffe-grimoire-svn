@@ -1,7 +1,7 @@
  VERSION=( "2.0.5pre3" )
 CATEGORY="audio"
      URL="$SOURCEFORGE_URL"
-  SOURCE="$SPELL/$SPELL-$VERSION"
+  SOURCE="$SPELL/$SPELL-$VERSION.tar.gz"
 HOMEPAGE="http://xmp.sourceforge.net/"
   #OPT[0]="alsa,lib:--enable-alsa:--disable-alsa:For output through alsa"
   OPT[0]="arts:--enable-arts:--disable-arts:For output through arts"

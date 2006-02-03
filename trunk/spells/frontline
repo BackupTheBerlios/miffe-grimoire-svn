@@ -1,10 +1,11 @@
-    VERSION="0.5.4"
-     SOURCE="autotrace/$SPELL-$VERSION"
+    VERSION=("0.5.4")
+     SOURCE="autotrace/$SPELL-$VERSION.tar.gz"
         URL="$SOURCEFORGE_URL"
    HOMEPAGE="http://autotrace.sourceforge.net/frontline/"
-        REQ="autotrace libart_lgpl freetype gnome-libs"
-     OPT[0]="gimp:::for gimp plug-in"
-     OPT[1]="sodipodi:::for sodipodi plug-in"
+        REQ=( "autotrace libart_lgpl freetype gnome-libs"
+              "gimp:::for gimp plug-in"
+              "sodipodi:::for sodipodi plug-in"
+            )
 SOURCEFORGE="autotrace"
        DESC="frontline is a frontend for autotrace
 

@@ -2,7 +2,7 @@
  CATEGORY="dockapps library"
 ATTRIBUTE="library"
       URL="http://solfertje.student.utwente.nl/~dalroi/libdockapp/files"
-   SOURCE="libdockapp-$VERSION"
+   SOURCE="libdockapp-$VERSION.tar.bz2"
  HOMEPAGE="http://solfertje.student.utwente.nl/~dalroi/libdockapp/"
       REQ="x11"
      DESC="$SPELL is a library that provides a framework for developing dockapps

@@ -1,7 +1,7 @@
    VERSION=( "0.4" "0.3" )
   CATEGORY="monitor utility"
  ATTRIBUTE="console"
-    SOURCE="855resolution-$VERSION"
+    SOURCE="855resolution-$VERSION.tgz"
        URL="http://perso.wanadoo.fr/apoirier"
   HOMEPAGE="http://perso.wanadoo.fr/apoirier"
   ESTIMATE="10"

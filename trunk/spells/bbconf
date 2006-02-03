@@ -1,7 +1,7 @@
        VERSION=( "1.10" )
       CATEGORY="window-manager"
      ATTRIBUTE="x11"
-        SOURCE="bbconf/bbconf-$VERSION"
+        SOURCE="bbconf/bbconf-$VERSION.tar.gz"
            URL="$SOURCEFORGE_URL"
       HOMEPAGE="http://bbconf.sourceforge.net"
            REQ="qt-x11-free"

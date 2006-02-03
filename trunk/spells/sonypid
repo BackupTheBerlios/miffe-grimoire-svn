@@ -1,7 +1,7 @@
       VERSION=( "1.9.1" "1.9" )
       CATEGORY="utility"
      ATTRIBUTE="console new"
-        SOURCE="sonypid-$VERSION"
+        SOURCE="sonypid-$VERSION.tar.bz2"
            URL="http://popies.net/sonypi"
       HOMEPAGE="http://popies.net/sonypi"
       ESTIMATE="8"

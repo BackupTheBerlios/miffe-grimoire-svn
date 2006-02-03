@@ -3,7 +3,7 @@
  ATTRIBUTE="new library"
   HOMEPAGE="http://www.gnu.org/software/gsl"
        URL="$GNU_URL"
-    SOURCE="gsl/gsl-$VERSION"
+    SOURCE="gsl/gsl-$VERSION.tar.gz"
        REQ=( ""
              ":--check::to check the compiled libraries (large log)" )
   ESTIMATE="71147"

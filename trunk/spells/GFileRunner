@@ -2,7 +2,7 @@
      IGNORE="icons"
    CATEGORY="file-manager"
         URL="$SOURCEFORGE_URL"
-     SOURCE="gfilerunner/gfilerunner-$VERSION"
+     SOURCE="gfilerunner/gfilerunner-$VERSION.tar.bz2"
    HOMEPAGE="http://gfilerunner.sourceforge.net"
         REQ="GConf,v1.0 gnome-libs gnome-vfs,v1.0 openssl"
 SOURCEFORGE="gfilerunner"
