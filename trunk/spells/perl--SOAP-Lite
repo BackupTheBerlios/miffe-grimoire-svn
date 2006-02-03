@@ -3,10 +3,10 @@ inherit  perl--modules
     SOURCE="/B/BY/BYRNE/SOAP/${SPELL#perl--}-$VERSION.tar.gz"
   HOMEPAGE="$HOMEPAGE/search?dist=SOAP-Lite"
        REQ=( "perl perl--XML-Parser"
-          "perl--crypt-ssleay:::for LWP https support"
-          "perl--io-socket-ssl:::for interface to SSL sockets"
+          "perl--Crypt-SSLeay:::for LWP https support"
+          "perl--IO-Socket-SSL:::for interface to SSL sockets"
           "perl--libwww:::for aplication programming interface to WWW"
-          "perl--mime-base64:::for encoding and decoding of base64 strings"
+          "perl--MIME-Base64:::for encoding and decoding of base64 strings"
           "perl--URI:::for Uniform Resource Identifiers"
 	  )
   ESTIMATE="97"
