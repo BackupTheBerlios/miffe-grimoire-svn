@@ -33,7 +33,10 @@ xemacs_build()  {
               export  CCACHE_PATH="/opt/gcc/$GCC3_VER/bin"
               sed  -i "s:head -:head -n :" configure
               ;;
+    21.4.19)  patch -p1 < $SCRIPT_DIR/glyphs-gtk.patch
+              ;;
   esac
+
   ./configure --prefix=/usr                 \
               --dynamic                     \
               $OPTS                         &&
@@ -68,3 +71,4 @@ case  $SPELL  in
 		    ESTIMATE="5"
 		    ;;
 esac
+# Origin grimoire-miffe
