@@ -29,7 +29,7 @@ xemacs_build()  {
   case  $VERSION  in
     21.4.17)  REQ="gcc-v3.4 $REQ"
               GCC3_VER=$( installed_version gcc-v3.4 )
-              export  PATH="${PATH/gcc\/current/gcc/$GCC3_VER}"
+              export  PATH="${PATH//gcc\/current/gcc/$GCC3_VER}"
               export  CCACHE_PATH="/opt/gcc/$GCC3_VER/bin"
               sed  -i "s:head -:head -n :" configure
               ;;
