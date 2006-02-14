@@ -58,11 +58,12 @@ build() {
 }
 
 pre_remove() {
- /etc/init.d/apcupsd  stop
+ [ -x /etc/init.d/apcupsd ]  &&  /etc/init.d/apcupsd  stop   ||  true
 }
 
 post_install() {
- /etc/init.d/apcupsd  start
+ [ -x /etc/init.d/apcupsd ]  &&  /etc/init.d/apcupsd  start  ||  true
 }
 
 
+# Origin grimoire-miffe
