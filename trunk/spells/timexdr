@@ -1,0 +1,14 @@
+   VERSION=( "1.15" "1.14" "1.12" "1.10" "1.0" )
+  CATEGORY="utility"
+ ATTRIBUTE="console"
+    SOURCE="timexdr/timexdr-$VERSION.tar.bz2"
+  HOMEPAGE="http://developer.berlios.de/projects/timexdr"
+       URL="http://download.berlios.de"
+       REQ="libusb"
+  ESTIMATE="24"
+      DESC="timexdr controls the Timex Data Recorder device
+timexdr can download data from the Timex Data Recorder
+device.  This device records heart rate monitor (HRM) 
+and/or  position data (GPS) transmitted from Timex Bodylink 
+HRM and GPS sensors."
+
