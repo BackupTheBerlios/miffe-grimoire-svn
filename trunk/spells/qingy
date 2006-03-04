@@ -1,4 +1,4 @@
-   VERSION=( "0.6.0" )
+   VERSION=( "0.7.1" "0.6.0" )
   CATEGORY="utility"
  ATTRIBUTE="console new"
     SOURCE="qingy/qingy-$VERSION.tar.bz2"
