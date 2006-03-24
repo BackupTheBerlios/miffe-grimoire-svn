@@ -1,4 +1,4 @@
-   VERSION=( "1.15" "1.14" "1.12" "1.10" "1.0" )
+   VERSION=( "1.16" "1.15" "1.14" "1.12" "1.10" "1.0" )
   CATEGORY="utility"
  ATTRIBUTE="console"
     SOURCE="timexdr/timexdr-$VERSION.tar.bz2"
