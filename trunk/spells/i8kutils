@@ -1,6 +1,6 @@
  VERSION=( "1.25" "1.17" )
      URL="http://people.debian.org/~dz/i8k/"
-  SOURCE="$SPELL-$VERSION.tar.gz"
+  SOURCE="$SPELL_$VERSION.tar.gz"
 HOMEPAGE="http://people.debian.org/~dz/i8k/"
     DESC="i8kutils  provides utilities for Dell Laptops.
 This package contains a kernel driver and user-space
