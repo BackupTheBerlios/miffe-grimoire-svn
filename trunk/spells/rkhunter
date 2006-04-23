@@ -3,7 +3,7 @@
   ATTRIBUTE="new console utility"
      SOURCE="rkhunter-$VERSION.tar.gz"
    HOMEPAGE="http://www.rootkit.nl"
-        URL="http://downloads.rootkit.nl"
+        URL="http://downloads.rootkit.nl/"
 	REQ=( "bash wget perl lsof"
            "nmap:::for network exploration/security auditing"
 	   )

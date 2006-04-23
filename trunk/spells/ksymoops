@@ -2,7 +2,7 @@
   CATEGORY="debugger kernel"
  ATTRIBUTE="console kernel new"
   HOMEPAGE="http://www.gnu.org/directory/devel/Debugging/ksymoops.html"
-       URL="http://www.kernel.org/pub/linux/utils/kernel/ksymoops/v2.4"
+       URL="http://www.kernel.org/pub/linux/utils/kernel/ksymoops/v2.4/"
        REQ="binutils"
   ESTIMATE="20"
  FRESHMEAT="ksymoops"

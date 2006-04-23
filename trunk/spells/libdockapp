@@ -1,7 +1,7 @@
   VERSION=( "0.6.1" "0.5.0" "0.4.0" )
  CATEGORY="dockapps library"
 ATTRIBUTE="library"
-      URL="http://solfertje.student.utwente.nl/~dalroi/libdockapp/files"
+      URL="http://solfertje.student.utwente.nl/~dalroi/libdockapp/files/"
    SOURCE="libdockapp-$VERSION.tar.bz2"
  HOMEPAGE="http://solfertje.student.utwente.nl/~dalroi/libdockapp/"
       REQ="x11"

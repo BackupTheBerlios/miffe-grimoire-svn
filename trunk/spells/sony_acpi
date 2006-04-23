@@ -2,7 +2,7 @@
       CATEGORY="kernel"
      ATTRIBUTE="driver linux-26-module"
         SOURCE="sony_acpi.tar.gz"
-           URL="http://popies.net/sonypi"
+           URL="http://popies.net/sonypi/"
       HOMEPAGE="http://popies.net/sonypi"
       ESTIMATE="13"
           DESC="sony_acpi is a mini-driver for Sony VAIO laptops.

@@ -2,7 +2,7 @@
   CATEGORY="documentation editor utility"
  ATTRIBUTE="console new"
     SOURCE="pdftk-${VERSION}.tar.bz2"
-       URL="http://www.pdfhacks.com/pdftk"
+       URL="http://www.pdfhacks.com/pdftk/"
   HOMEPAGE="http://www.pdfhacks.com/pdftk"
  FRESHMEAT="pdftk"
   ESTIMATE="693"

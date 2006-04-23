@@ -4,7 +4,7 @@
  ATTRIBUTE="x11 client"
     SOURCE="insight-$VERSION.tar.bz2"
   HOMEPAGE="http://sources.redhat.com/insight/"
-       URL="ftp://sourceware.org/pub/insight/releases"
+       URL="ftp://sourceware.org/pub/insight/releases/"
        REQ="tcl tk"
  FRESHMEAT="insight"
   EPROVIDE="gdb"

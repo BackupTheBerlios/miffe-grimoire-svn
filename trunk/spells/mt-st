@@ -3,7 +3,7 @@
  ATTRIBUTE="console"
   HOMEPAGE="http://www.ibiblio.org/pub/Linux/system/backup"
     SOURCE="pub/linux/system/backup/mt-st-$VERSION.tar.gz"
-       URL="ftp://ftp.ibiblio.org"
+       URL="ftp://ftp.ibiblio.org/"
   ESTIMATE="3060"
       DESC="mt-st provides magnetic tape control tools for SCSI tapes
 

@@ -1,6 +1,6 @@
     VERSION=( "0.3" )
    CATEGORY="file-system network"
-        URL="http://www.lrn.ru"
+        URL="http://www.lrn.ru/"
      SOURCE="~bga/gtknw2/gtknw2-0.2.tar.bz2"
    HOMEPAGE="http://www.lrn.ru/~bga/gtknw2/"
         REQ="gtk+ ncpfs"

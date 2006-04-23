@@ -2,7 +2,7 @@
       CATEGORY="graphic"
      ATTRIBUTE="library x11"
         SOURCE="contrib/widgets/Xaw3d/R6.3/Xaw3d-$VERSION.tar.gz"
-           URL="ftp://ftp.x.org"
+           URL="ftp://ftp.x.org/"
       HOMEPAGE="http://wino.physik.uni-mainz.de/~plass/gv/Xaw3d.html"
            REQ="x11"
      FRESHMEAT="Xaw3d"

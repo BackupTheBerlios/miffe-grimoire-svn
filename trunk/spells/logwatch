@@ -2,7 +2,7 @@
       CATEGORY="log"
      ATTRIBUTE="console"
         SOURCE="pub/linux/logwatch-$VERSION.tar.gz"
-           URL="ftp://ftp.kaybee.org"
+           URL="ftp://ftp.kaybee.org/"
       HOMEPAGE="http://www.logwatch.org"
            REQ="perl textutils sh-utils grep mutt"
      FRESHMEAT="logwatch"

@@ -1,6 +1,6 @@
  VERSION=( "0.4.0" "0.3.6" )
 CATEGORY="development"
-     URL="http://zoinks.mikelockwood.com"
+     URL="http://zoinks.mikelockwood.com/"
   SOURCE="download/$SPELL-$VERSION.tar.gz"
 HOMEPAGE="http://zoinks.mikelockwood.com/"
 ESTIMATE="564"

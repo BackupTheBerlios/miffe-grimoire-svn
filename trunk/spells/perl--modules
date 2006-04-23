@@ -2,7 +2,7 @@
   CATEGORY="profile perl"
  ATTRIBUTE="profile perl-module"
   HOMEPAGE="http://search.cpan.org"
-       URL="http://www.cpan.org/authors/id"
+       URL="http://www.cpan.org/authors/id/"
        REQ=( "perl"
           "perl--PDL:::for the Perl Data Language"
           "perl--SOAP-Lite:::for interface to the SOAP"

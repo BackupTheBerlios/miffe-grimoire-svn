@@ -2,7 +2,7 @@
   CATEGORY="monitor utility"
  ATTRIBUTE="console"
     SOURCE="855resolution-$VERSION.tgz"
-       URL="http://perso.wanadoo.fr/apoirier"
+       URL="http://perso.wanadoo.fr/apoirier/"
   HOMEPAGE="http://perso.wanadoo.fr/apoirier"
   ESTIMATE="10"
       DESC="$SPELL changes the resolution of a VBIOS mode for the Intel 855 card

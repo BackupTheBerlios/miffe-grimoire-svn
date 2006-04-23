@@ -2,7 +2,7 @@
       CATEGORY="dockapps"
      ATTRIBUTE="x11"
         SOURCE="wmifinfo-$VERSION.tgz"
-           URL="http://www.zevv.nl/wmifinfo"
+           URL="http://www.zevv.nl/wmifinfo/"
       HOMEPAGE="http://www.zevv.nl/wmifinfo"
            REQ="x11"
       ESTIMATE="8"

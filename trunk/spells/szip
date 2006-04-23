@@ -3,7 +3,7 @@
   ATTRIBUTE="new console broken"
      SOURCE="$VERSION/src/szip-$VERSION.tar.gz"
    HOMEPAGE="http://hdf.ncsa.uiuc.edu/doc_resource/SZIP"
-        URL="ftp://ftp.ncsa.uiuc.edu/HDF/szip"
+        URL="ftp://ftp.ncsa.uiuc.edu/HDF/szip/"
    ESTIMATE="2226"
        DESC="szip library provides lossless compression of scientific data
 

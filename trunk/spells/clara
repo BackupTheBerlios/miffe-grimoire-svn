@@ -3,7 +3,7 @@
   ATTRIBUTE="new x11"
      SOURCE="clara-$VERSION.tar.gz"
    HOMEPAGE="http://www.geocities.com/claraocr"
-        URL="http://www.geocities.com/claraocr"
+        URL="http://www.geocities.com/claraocr/"
 	REQ="x11 netpbm"
    ESTIMATE="38"
   FRESHMEAT="clara"

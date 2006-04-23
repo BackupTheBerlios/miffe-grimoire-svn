@@ -3,7 +3,7 @@
   CATEGORY="log web"
  ATTRIBUTE="utility new"
     SOURCE="download/cronolog-$VERSION.tar.gz"
-       URL="http://cronolog.org"
+       URL="http://cronolog.org/"
        REQ=""
   HOMEPAGE="http://cronolog.org"
  FRESHMEAT="cronolog"

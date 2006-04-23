@@ -2,7 +2,7 @@
   CATEGORY="archive "
  ATTRIBUTE="console"
   HOMEPAGE="http://liblzf.plan9.de"
-       URL="http://www.goof.com/pcg/marc/data"
+       URL="http://www.goof.com/pcg/marc/data/"
     SOURCE="liblzf-$VERSION.tar.gz"
        REQ=""
   ESTIMATE="17"

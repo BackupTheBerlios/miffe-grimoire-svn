@@ -2,7 +2,7 @@
       CATEGORY="utility"
      ATTRIBUTE="console"
         SOURCE="software/radeon/radeontool-$VERSION.tar.gz"
-           URL="http://fdd.com"
+           URL="http://fdd.com/"
       HOMEPAGE="http://fdd.com/software/radeon"
            REQ="pciutils"
       ESTIMATE=""

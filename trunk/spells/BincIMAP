@@ -1,7 +1,7 @@
   VERSION=( "1.2.8" )
 ATTRIBUTE="server"
  CATEGORY="email"
-      URL="http://www.bincimap.org"
+      URL="http://www.bincimap.org/"
    SOURCE="dl/tarballs/1.2/bincimap-${VERSION}final.tar.bz2"
  HOMEPAGE="http://www.bincimap.org/"
       REQ="checkpassword"

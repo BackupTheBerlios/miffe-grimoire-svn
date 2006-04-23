@@ -3,7 +3,7 @@
   ATTRIBUTE="new x11 concurrent"
      SOURCE="dx-$VERSION.tar.gz"
    HOMEPAGE="http://www.opendx.org"
-    	URL="http://opendx.npaci.edu/source"
+    	URL="http://opendx.npaci.edu/source/"
 	REQ=( "lesstif autoconf tiff"
            "MesaLib:::for 3D functionality if you don not have OpenGL"
            "ImageMagick:::for more export formats"

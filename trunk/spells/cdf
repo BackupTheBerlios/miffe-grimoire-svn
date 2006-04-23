@@ -3,7 +3,7 @@
   ATTRIBUTE="new library"
      SOURCE="cdf${VERSION:0:1}${VERSION:2:1}/unix/cdf${VERSION:0:1}${VERSION:2:1}-dist-all.tar.gz"
    HOMEPAGE="http://www.unidata.ucar.edu/packages/netcdf"
-        URL="ftp://nssdcftp.gsfc.nasa.gov/standards/cdf/dist"
+        URL="ftp://nssdcftp.gsfc.nasa.gov/standards/cdf/dist/"
 	REQ=( "ncurses"
               "jdk:-java_api::to make CDF Java API available"
             )

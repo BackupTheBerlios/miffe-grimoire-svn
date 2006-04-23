@@ -3,7 +3,7 @@
   ATTRIBUTE="new library"
      SOURCE="HDF5/current/src/hdf$VERSION.tar.gz"
    HOMEPAGE="http://hdf.ncsa.uiuc.edu"
-        URL="ftp://ftp.ncsa.uiuc.edu/HDF"
+        URL="ftp://ftp.ncsa.uiuc.edu/HDF/"
 	REQ="zlib szip"
    ESTIMATE="2834"
        DESC="hdf is a library for the Hierarchical Data Format (HDF)."

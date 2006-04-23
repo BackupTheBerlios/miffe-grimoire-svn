@@ -1,6 +1,6 @@
   VERSION=( "0.0.3" )
  CATEGORY="x11"
-      URL="http://www.isomedia.com"
+      URL="http://www.isomedia.com/"
    SOURCE="homes/stevencooper/files/fluxspace-0.0.3.tar.gz"
  HOMEPAGE="http://www.isomedia.com/homes/stevencooper/projects/fluxspace.html"
       REQ="Python imlib2 swig"

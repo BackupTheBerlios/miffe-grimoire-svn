@@ -2,7 +2,7 @@
       CATEGORY="disk"
      ATTRIBUTE="console"
         SOURCE="lphdisk-$VERSION.tar.bz2"
-           URL="http://www.procyon.com/~pda/lphdisk"
+           URL="http://www.procyon.com/~pda/lphdisk/"
       HOMEPAGE="http://www.procyon.com/~pda/lphdisk"
            REQ=""
      FRESHMEAT="lphdisk"

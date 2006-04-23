@@ -2,7 +2,7 @@
       CATEGORY="utility"
      ATTRIBUTE="console utility"
         SOURCE="enscript-$VERSION.tar.gz"
-           URL="http://www.iki.fi/mtr/genscript"
+           URL="http://www.iki.fi/mtr/genscript/"
       HOMEPAGE="http://people.ssh.fi/mtr/gentscript"
       ESTIMATE="133"
           DESC="enscript converts ASCII files to PostScript

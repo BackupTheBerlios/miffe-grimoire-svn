@@ -3,7 +3,7 @@
   CATEGORY="graphic science"
  ATTRIBUTE="library"
     SOURCE="fftw-$VERSION.tar.gz"
-       URL="ftp://ftp.fftw.org/pub/fftw"
+       URL="ftp://ftp.fftw.org/pub/fftw/"
   HOMEPAGE="http://www.fftw.org"
        REQ=( ""
              ":--enable-threads::to compile FFTW SMP threads library"

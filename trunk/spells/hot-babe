@@ -3,7 +3,7 @@
      ATTRIBUTE="new x11"
       HOMEPAGE="http://dindinx.net/hotbabe"
         SOURCE="downloads/hot-babe-$VERSION.tar.bz2"
-           URL="$HOMEPAGE"
+           URL="$HOMEPAGE/"
            REQ="x11 gtk+ gdk-pixbuf"
       ESTIMATE="8"
           DESC="hot-babe is a graphical utility which displays system activity

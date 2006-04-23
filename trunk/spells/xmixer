@@ -1,6 +1,6 @@
  VERSION=( "0.9.4" )
 CATEGORY="audio"
-     URL="http://mpx.freeshell.org"
+     URL="http://mpx.freeshell.org/"
   SOURCE="xmixer-0.9.4.tar.gz"
 HOMEPAGE="http://mpx.freeshell.org/"
      REQ="x11"

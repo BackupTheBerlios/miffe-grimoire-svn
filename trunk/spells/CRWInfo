@@ -2,7 +2,7 @@
       CATEGORY="digital-camera"
      ATTRIBUTE="console utility  new"
         SOURCE="~sven/crwinfo/CRWInfo-$VERSION.tar.gz"
-           URL="http://neuemuenze.heim1.tu-clausthal.de"
+           URL="http://neuemuenze.heim1.tu-clausthal.de/"
       HOMEPAGE="http://neuemuenze.heim1.tu-clausthal.de/~sven/crwinfo"
 	   REQ=""
       ESTIMATE="6"
