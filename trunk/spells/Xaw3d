@@ -17,6 +17,9 @@ function build() {
         *)  XLIBDIR=/usr/X11/lib   ;;
   esac
 
+  [ -e  /usr/X11/include/X11/Xaw3d ]		&&
+  rm -r /usr/X11/include/X11/Xaw3d
+
   cd lib/Xaw3d					&&
   sed -i -e "/#include <widec.h>/,/#define wcsncpy(d,s,l) wsncpy(d,s,l)/d" \
 				XawI18n.h	&&
@@ -25,8 +28,8 @@ function build() {
   cp *.h /usr/X11/include/X11/Xaw3d		&&
   xmkmf						&&
   make						&&
-  cp libXaw3d.so.[[:digit:]].0  $XLIBDIR	&&
-  ln -sf libXaw3d.so.[[:digit:]].0 $XLIBDIR/libXaw3d.so		&&
+  install -v -m 755 libXaw3d.so.?.? $XLIBDIR	&&
   ldconfig 					&&
   cd -
 }
+# Origin grimoire-miffe
