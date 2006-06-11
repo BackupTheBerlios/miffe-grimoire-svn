@@ -11,6 +11,9 @@ It does nothing useful, it's just a toy.
 "
 
 function build() {
+
+  OPTS="$OPTS --x-libraries=/usr/lib --x-includes=/usr/include"
+
   ./configure	--prefix=/usr		\
 		--sysconfdir=/etc	\
 		$OPTS			&&
