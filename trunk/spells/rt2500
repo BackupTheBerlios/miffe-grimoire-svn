@@ -1,4 +1,4 @@
-   VERSION=( "1.1.0-b3" "1.1.0-b2" )
+  VERSION=( "1.1.0-b4" "1.1.0-b2" )
   CATEGORY="kernel network"
  ATTRIBUTE="driver linux-26-module new"
     SOURCE="rt2400/$SPELL-$VERSION.tar.gz"
@@ -12,25 +12,31 @@ based on rt2500 chipset.
 
 build() {
  KVER=$( installed_version $( get_provider linux-kernel ) )
+ if   [  -z "$KVER"  ]
+ then         KVER=$( uname -r )
+ fi
+
  KERNDIR=/lib/modules/$KVER/build
  MODDIR=/lib/modules/$KVER/extra
 
 
  cd  Module		&&
- cp  README  ..		&&
  sed  -i "s:/sbin/depmod -a:/sbin/depmod -a $KVER:"  Makefile	&&
  
  make  KERNDIR=$KERNDIR MODDIR=$MODDIR			&&
  prepare_install					&&
  make  KERNDIR=$KERNDIR MODDIR=$MODDIR  install		&&
+ mkdir   -p                          /usr/doc/$SPELL	&&
+ install -v -m 0644 iwpriv_usage.txt			\
+                    README TESTING RT2500STA.dat	\
+                    /usr/doc/$SPELL			&&
 
  ( if echo $OPTS | grep -q "qt-x11-free" ; then
 	cd  ../Utilitys					&&
 	qmake -o  Makefile  raconfig2500.pro		&&
 	sed -i "5i QTDIR = /usr"  Makefile		&&
-	sed -i "s:-lqt:-lqt-mt:"  Makefile		&&
  	sed -i "s:^INCPATH  =:INCPATH  = -I/usr/include/qt:"  Makefile	&&
 	make						&&
-	install  -m 755   RaConfig2500  /usr/bin	
+	install -v -m 0755   RaConfig2500  /usr/bin	
  fi ) 
 }

@@ -1,4 +1,4 @@
-   VERSION=( "6.4" "6.1" )
+   VERSION=( "6.5" "6.4" "6.1" )
     IGNORE="1999"
   CATEGORY="development"
  ATTRIBUTE="x11 client"

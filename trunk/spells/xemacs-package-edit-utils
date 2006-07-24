@@ -1,5 +1,5 @@
 inherit  xemacs
-   VERSION=( "2.32" "2.24" )
+   VERSION=( "2.34" "2.32" "2.24" )
     SOURCE="xemacs/packages/edit-utils-$VERSION-pkg.tar.gz"
       DESC="$SPELL provides miscellaneous editor extensions, you probably need this.
 "

@@ -1,5 +1,5 @@
 inherit  xemacs
-   VERSION=( "2.06" "2.05" "2.03" "2.01" )
+   VERSION=( "2.07" "2.06" "2.05" "2.03" "2.01" )
     SOURCE="xemacs/packages/prog-modes-$VERSION-pkg.tar.gz"
       DESC="$SPELL provides support for various programming languages.
 "

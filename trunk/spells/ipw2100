@@ -1,4 +1,4 @@
-   VERSION=( "1.1.4" "1.1.3" )
+   VERSION=( "1.2.1" "1.1.4" "1.1.3" )
   CATEGORY="network kernel"
  ATTRIBUTE="driver linux-26-module"
     SOURCE="ipw2100/ipw2100-$VERSION.tgz"
