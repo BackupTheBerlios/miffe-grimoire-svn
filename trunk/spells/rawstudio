@@ -1,0 +1,25 @@
+       VERSION=( "0.2" )
+      CATEGORY="digital-camera graphic/editor"
+     ATTRIBUTE="x11 new"
+        SOURCE="rawstudio-$VERSION.tar.gz"
+           URL="http://rawstudio.org/files/release/"
+      HOMEPAGE="http://rawstudio.org"
+	   REQ="gtk+ GConf"
+      ESTIMATE="132"
+     FRESHMEAT="rawstudio"
+          DESC="$SPELL is a raw-image converter and editor
+- Reads all dcraw supported formats
+- Internal 16bit rgb
+- Various post-shot controls (white balance, saturation 
+and exposure compensation among others)
+- Realtime histogram
+- Optimized for MMX, 3dnow! and SSE (detected runtime)
+- Exposure mask
+- Easy sorting of images
+- Fullscreen mode for better overview
+- XML settings cache
+- Basic EXIF-reading
+- And much more...
+"
+
+# Origin local
