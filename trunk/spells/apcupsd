@@ -2,7 +2,7 @@
   CATEGORY="utility"
  ATTRIBUTE="console"
     SOURCE="apcupsd/apcupsd-$VERSION.tar.gz"
-  HOMEPAGE="http://www2.apcupsd.com"
+  HOMEPAGE="http://www.apcupsd.org"
        URL="$SOURCEFORGE_URL"
        REQ=( "system-logger email-client"
           "tcp_wrappers:--with-libwrap=/usr/lib::for an optional method of controlling access"
