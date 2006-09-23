@@ -19,5 +19,5 @@ function build() {
 
   make						&&
   prepare_install                               &&
-  make install
+  install -v -s -m 0755  wmab  /usr/bin/
 }

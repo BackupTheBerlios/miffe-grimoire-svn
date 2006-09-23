@@ -1,4 +1,4 @@
-    VERSION=( "4.4.0" "4.3.3" "4.3.2" )
+    VERSION=( "4.4.4" "4.4.0" "4.3.3" "4.3.2" )
    CATEGORY="graphic data science"
   ATTRIBUTE="new x11 concurrent"
      SOURCE="dx-$VERSION.tar.gz"
@@ -7,7 +7,7 @@
 	REQ=( "lesstif autoconf tiff"
            "MesaLib:::for 3D functionality if you don not have OpenGL"
            "ImageMagick:::for more export formats"
-           "j2sdk::--without-javadx:for java-enabled DX"
+           "java::--without-javadx:for java-enabled DX"
            "cdf::--without-cdf:for CDF data file format library"
            "netcdf::--without-netcdf:for netCDF data file format library"
            "hdf::--without-hdf:for HDF data file format library"
@@ -25,19 +25,14 @@ scientific, engineering and analytical data.
 "
 
 function build() {
-	JNI=""
-	if [ -z $BRANCH ]; then 
-		echo $OPTS | grep -q "without-javadx"	||
-		JNI="--with-jni-path=$( dirname $( augur install j2sdk | grep jni.h ) ):$( dirname $( augur install j2sdk | grep jni_md.h ) )"
-	fi 
+  JNI=""
 
-	./configure  --build=$BUILD		\
-		     --prefix=/usr		\
-		     --sysconfdir=/etc		\
-		     --localstatedir=/var	\
-		     $JNI			\
-		     $OPTS			&&
-	make					&&
-	prepare_install				&&
-	make  install		
+  if [ echo $OPTS | grep -qv "without-javadx" ]
+  then
+    JAVA=$( get_provider java )
+    JNI="--with-jni-path=$( dirname $( grep jni.h $INSTALL_LOGS/$JAVA)):$( dirname $( grep jni_md.h $INSTALL_LOGS/$JAVA))"
+    OPTS="$OPTS $JNI"
+  fi 
+
+  default_build
 }
