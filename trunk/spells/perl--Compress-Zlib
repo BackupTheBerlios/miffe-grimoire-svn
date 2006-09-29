@@ -1,6 +1,0 @@
-inherit  perl--modules
-   VERSION=( "1.42" "1.41" )
-    SOURCE="P/PM/PMQS/Compress-Zlib-$VERSION.tar.gz"
-  HOMEPAGE="$HOMEPAGE/search?dist=Compress-Zlib"
-  ESTIMATE="36"
-      DESC="$SPELL provides a Perl interface to the zlib compression library"

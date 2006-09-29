@@ -1,6 +1,0 @@
-inherit  perl--modules
-   VERSION=( "0.07" )
-    SOURCE="A/AU/AUTRIJUS/PAR-Dist-$VERSION.tar.gz"
-  HOMEPAGE="$HOMEPAGE/search?dist=PAR-Dist"
-  ESTIMATE="10"
-      DESC="$SPELL, a toolkit to create and manipulate PAR distributions"

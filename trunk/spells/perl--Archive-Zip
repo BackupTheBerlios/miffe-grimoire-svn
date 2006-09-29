@@ -1,6 +1,0 @@
-inherit  perl--modules
-   VERSION=( "1.16" )
-    SOURCE="S/SM/SMPETERS/Archive-Zip-$VERSION.tar.gz"
-  HOMEPAGE="$HOMEPAGE/search?dist=Archive-Zip"
-  ESTIMATE="21"
-      DESC="$SPELL allows to create, manipulate, read and write Zip archives"

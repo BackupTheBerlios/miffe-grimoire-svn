@@ -1,6 +1,0 @@
-inherit  perl--modules
-   VERSION=( "0.54" "0.51" )
-    SOURCE="A/AU/AUTRIJUS/Module-ScanDeps-$VERSION.tar.gz"
-  HOMEPAGE="$HOMEPAGE/search?dist=Module-ScanDeps"
-  ESTIMATE="15"
-      DESC="$SPELL, a module to recursively scan Perl programs for dependencies"
