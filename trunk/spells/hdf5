@@ -1,0 +1,49 @@
+    VERSION=( "5-1.6.5" "5-1.6.4" "5-1.6.3" "5-1.6.2" )
+   CATEGORY="data science library"
+  ATTRIBUTE="new library"
+     SOURCE="HDF5/current/src/hdf$VERSION.tar.gz"
+   HOMEPAGE="http://www.hdfgroup.org"
+        URL="ftp://ftp.ncsa.uiuc.edu/HDF/"
+	REQ="zlib szip"
+   ESTIMATE="2537"
+       DESC="hdf5 is a library for the Hierarchical Data Format 5 (HDF5)."
+
+patch_ltmain() {
+  patch bin/ltmain.sh  <  $SCRIPT_DIR/ltpatch
+}
+
+function build() {
+
+ fix_time_calls() {
+   case $VERSION in
+     5-1.6.5) sed  -i "495d"  test/Makefile
+              sed  -i "338d"  tools/gifconv/Makefile
+              sed  -i "345d"  tools/h5diff/Makefile
+              sed  -i "351d"  tools/h5dump/Makefile
+              sed  -i "337d"  tools/h5import/Makefile
+              sed  -i "361d"  tools/h5jam/Makefile
+              sed  -i "328d"  tools/h5ls/Makefile
+              sed  -i "352d"  tools/h5repack/Makefile
+              sed  -i "331d"  tools/lib/Makefile
+              sed  -i "347d"  tools/misc/Makefile
+              ;;
+   esac
+ }
+
+
+ case $VERSION in
+   5-1.6.5)  patch_ltmain ;;
+ esac
+
+ ./configure  --build=$BUILD		\
+              --prefix=/usr		\
+	      --sysconfdir=/etc		\
+              --localstatedir=/var	\
+              --with-szlib		\
+              $OPTS			&&
+ make					&&
+# fix_time_calls				&&
+# make  check				&&
+ prepare_install			&&
+ make  install
+}

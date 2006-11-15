@@ -1,4 +1,4 @@
-  VERSION=( "0.21-1" "0.21-0_rc1" "0.20-2" "0.20-1" "0.20-0" )
+  VERSION=( "0.21-2" "0.21-1" "0.21-0_rc1" "0.20-2" "0.20-1" "0.20-0" )
  CATEGORY="graphic-editor graphic"
 ATTRIBUTE="x11"
    SOURCE="$SPELL/$SPELL-$VERSION.tar.gz"

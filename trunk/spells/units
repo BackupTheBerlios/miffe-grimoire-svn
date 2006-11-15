@@ -1,4 +1,4 @@
-       VERSION=( "1.85" "1.80" "1.74" )
+       VERSION=( "1.86" "1.85" "1.80" "1.74" )
       CATEGORY="math"
      ATTRIBUTE="console"
         SOURCE="units/units-$VERSION.tar.gz"
