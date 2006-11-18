@@ -4,8 +4,8 @@
         SOURCE="wmab-$VERSION.tar.gz"
            URL="http://web.tiscali.it/kalem/wmab/"
       HOMEPAGE="http://web.tiscali.it/kalem/dockapps.html"
-           REQ="x11"
-      ESTIMATE="9"
+           REQ="libXpm"
+      ESTIMATE="11"
           DESC="wmab allows to graphically monitor battery status
 
 WMab is a WindowMaker dockable application that allows ACPI laptop users 

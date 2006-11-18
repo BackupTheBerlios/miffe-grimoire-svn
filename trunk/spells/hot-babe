@@ -4,8 +4,8 @@
       HOMEPAGE="http://dindinx.net/hotbabe"
         SOURCE="downloads/hot-babe-$VERSION.tar.bz2"
            URL="$HOMEPAGE/"
-           REQ="x11 gtk+ gdk-pixbuf"
-      ESTIMATE="8"
+           REQ="gtk+ gdk-pixbuf"
+      ESTIMATE="19"
           DESC="hot-babe is a graphical utility which displays system activity
 in a very special way. When the CPU is idle, it displays a 
 dressed girl, and when the activity goes up, as the 

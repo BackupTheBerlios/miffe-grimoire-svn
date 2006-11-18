@@ -5,8 +5,8 @@ ATTRIBUTE="x11 utility"
    SOURCE=("wmweatherplus/$SPELL-$VERSION.tar.gz"
            "wmweatherplus/docs.tar.gz")
  HOMEPAGE="http://www.dockapps.org/file.php/id/112/"
-      REQ="x11 pcre w3c-libwww WindowMaker"
- ESTIMATE="6"
+      REQ="pcre w3c-libwww WindowMaker"
+ ESTIMATE="214"
      DESC="wmweather+ is a dockapp showing weather forecast and maps
 wmweather+ will download the National Weather Serivce 
 METAR bulletins, ANV and MRF forecasts, and any weather 
