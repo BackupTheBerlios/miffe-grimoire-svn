@@ -3,7 +3,7 @@ CATEGORY="dockapps"
      URL="ftp://truffula.com/pub/"
   SOURCE="$SPELL-$VERSION.tar.bz2"
 HOMEPAGE="http://freshmeat.net/projects/wmnetload/"
-     REQ="x11 libdockapp"
+     REQ="libdockapp"
     DESC="wmnetload is a dockapp network interface monitor
 for Window Maker.
 It is designed to fit well with dockapps like wmcpuload and wmmemmon.

@@ -4,8 +4,8 @@
     SOURCE="i855crt/i855crt-$VERSION.tar.gz"
        URL="$SOURCEFORGE_URL"
   HOMEPAGE="http://i855crt.sourceforge.net"
-       REQ="x11"
-  ESTIMATE="6"
+       REQ="libXv"
+  ESTIMATE="7"
       DESC="$SPELL enables CRT output on Intel 855GM/GME based laptop.
 "
 

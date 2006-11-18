@@ -4,7 +4,7 @@
         SOURCE="contrib/widgets/Xaw3d/R6.3/Xaw3d-$VERSION.tar.gz"
            URL="ftp://ftp.x.org/"
       HOMEPAGE="http://wino.physik.uni-mainz.de/~plass/gv/Xaw3d.html"
-           REQ="x11"
+           REQ=""
       ESTIMATE="321"
      FRESHMEAT="Xaw3d"
           DESC="Xaw3d widget library.

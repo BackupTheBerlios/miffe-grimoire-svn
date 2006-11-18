@@ -4,7 +4,7 @@ ATTRIBUTE="x11"
       URL="$SOURCEFORGE_URL"
    SOURCE="vis5d/$SPELL-$VERSION.tar.bz2"
  HOMEPAGE="http://vis5d.sourceforge.net"
-      REQ=("x11"
+      REQ=(""
            "gimp:::for gradient data files and gradient editing tool"
            "netcdf:::for irregular data support and other features"
           )

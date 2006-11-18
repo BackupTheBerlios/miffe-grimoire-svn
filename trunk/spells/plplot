@@ -4,7 +4,7 @@
   HOMEPAGE="http://plplot.sourceforge.net"
        URL="$SOURCEFORGE_URL"
     SOURCE="plplot/plplot-${VERSION}.tar.gz"
-       REQ=( "x11 perl libpng jpeg libtool tcl tk gd" 
+       REQ=( "perl libpng jpeg libtool tcl tk gd" 
              "numarray:::for Python interface to plplot" )
   ESTIMATE="557"
       DESC="plplot is a scientific plotting package.

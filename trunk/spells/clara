@@ -4,7 +4,7 @@
      SOURCE="clara-$VERSION.tar.gz"
    HOMEPAGE="http://www.geocities.com/claraocr"
         URL="http://www.geocities.com/claraocr/"
-	REQ="x11 netpbm"
+	REQ="netpbm"
    ESTIMATE="38"
   FRESHMEAT="clara"
        DESC="clara is an OCR program for large-scale digitalization projects
