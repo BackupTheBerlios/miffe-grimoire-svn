@@ -1,4 +1,4 @@
-   VERSION=( "1.30" "1.22" "1.20" )
+   VERSION=( "1.31" "1.30" "1.22" "1.20" )
   CATEGORY="utility/gis"
  ATTRIBUTE="console"
     SOURCE="timexdr/timexdr-$VERSION.tar.bz2"
