@@ -1,4 +1,4 @@
-   VERSION=( "1.12" )
+   VERSION=( "1.41" "1.12" )
   CATEGORY="documentation editor utility"
  ATTRIBUTE="console new"
     SOURCE="pdftk-${VERSION}.tar.bz2"
@@ -6,6 +6,7 @@
   HOMEPAGE="http://www.pdfhacks.com/pdftk"
  FRESHMEAT="pdftk"
   ESTIMATE="693"
+# Requires gcj
       DESC="pdftk is a pdf toolkit
 If PDF is electronic paper, then pdftk is an electronic staple-remover, 
 hole-punch, binder, secret-decoder-ring, and X-Ray-glasses. 
