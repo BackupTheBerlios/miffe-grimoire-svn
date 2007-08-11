@@ -4,7 +4,7 @@
       HOMEPAGE="http://dindinx.net/hotbabe"
         SOURCE="downloads/hot-babe-$VERSION.tar.bz2"
            URL="$HOMEPAGE/"
-           REQ="gtk+ gdk-pixbuf"
+           REQ="gtk+"
       ESTIMATE="19"
           DESC="hot-babe is a graphical utility which displays system activity
 in a very special way. When the CPU is idle, it displays a 
