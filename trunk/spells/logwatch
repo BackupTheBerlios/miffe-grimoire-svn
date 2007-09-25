@@ -1,4 +1,4 @@
-       VERSION=( "7.2.1" "5.0" "4.3.2" )
+       VERSION=( "7.3.6" "7.2.1" "5.0" "4.3.2" )
       CATEGORY="log"
      ATTRIBUTE="console"
         SOURCE="pub/linux/logwatch-$VERSION.tar.gz"

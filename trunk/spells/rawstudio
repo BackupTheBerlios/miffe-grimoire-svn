@@ -1,4 +1,4 @@
-       VERSION=( "0.4.1" "0.3" "0.2" )
+       VERSION=( "0.6" "0.4.1" "0.3" "0.2" )
       CATEGORY="digital-camera graphic/editor"
      ATTRIBUTE="x11 new"
         SOURCE="rawstudio-$VERSION.tar.gz"

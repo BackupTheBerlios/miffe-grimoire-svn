@@ -1,9 +1,9 @@
     VERSION=( "4.2r1" )
    CATEGORY="data science library"
   ATTRIBUTE="new library"
-     SOURCE="pub/outgoing/hdf4/hdf${VERSION}/hdf${VERSION}.tar.gz"
+     SOURCE="HDF${VERSION}.tar.gz"
    HOMEPAGE="http://www.hdfgroup.org"
-        URL="ftp://ftp.ncsa.uiuc.edu/HDF/"
+        URL="ftp://ftp.hdfgroup.org/HDF/HDF_Current/src/"
 	REQ="zlib szip jpeg"
        OPTS="--disable-fortran"
    ESTIMATE="1184"
