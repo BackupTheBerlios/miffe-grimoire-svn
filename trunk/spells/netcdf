@@ -5,7 +5,7 @@
    HOMEPAGE="http://www.unidata.ucar.edu/packages/netcdf"
         URL="ftp://ftp.unidata.ucar.edu/pub/netcdf/
              ftp://www.gfd-dennou.org/arch/netcdf/unidata-mirror/"
-   ESTIMATE="610"
+   ESTIMATE="1842"
   FRESHMEAT="netcdf"
        DESC="netcdf is a library for NetCDF data format
 (network Common Data Form) which is an interface for 
@@ -22,7 +22,6 @@ function build() {
   export	CPPFLAGS="-DpgiFortran"
 # export	CPPFLAGS="-Df2cFortran"
 
- cd src					&&
  ./configure 	--build=$BUILD		\
 		--prefix=/usr		\
 		--sysconfdir=/etc	\
