@@ -1,4 +1,4 @@
-   require 0.1.6
+    stable 0.1.6
   category network
  attribute new x11
        url http://www.ex-parrot.com/~chris/driftnet/

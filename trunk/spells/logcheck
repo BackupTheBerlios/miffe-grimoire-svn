@@ -1,4 +1,4 @@
-    require 1.1.2
+     stable 1.1.2
    category security log
   attribute new noheal console utility
      source logcheck/logcheck-$VERSION.tar.gz

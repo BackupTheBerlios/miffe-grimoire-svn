@@ -1,4 +1,4 @@
-   require 0.5
+    stable 0.5
   category utility
  attribute new console utility
   homepage http://www.gnu.org/software/wdiff/wdiff.html

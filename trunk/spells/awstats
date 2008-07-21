@@ -1,5 +1,5 @@
     stable 6.8
-      safe 6.8
+    secure 6.8
    require perl httpd
   optional perl--Geo-IPfree  ''  ''  for a IP-Country database Perl plugin
   optional perl--Net-XWhois  ''  ''  to show whois info on host 

@@ -1,4 +1,4 @@
-   require 1.6.2
+    stable 1.6.2
     secure 1.6.2
   category log web
  attribute utility new
