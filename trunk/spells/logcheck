@@ -1,20 +1,18 @@
-    VERSION=( "1.1.2" )
-   CATEGORY="security log"
-  ATTRIBUTE="new noheal console utility"
-     SOURCE="logcheck/logcheck-$VERSION.tar.gz"
-   HOMEPAGE="http://sourceforge.net/projects/logcheck"
-        URL="$SOURCEFORGE_URL"
-	REQ="grep email-client"
-   ESTIMATE="5"
-SOURCEFORGE="logcheck"
-       DESC="logcheck checks system log files for unusual activity
-
+    require 1.1.2
+   category security log
+  attribute new noheal console utility
+     source logcheck/logcheck-$VERSION.tar.gz
+   homepage http://sourceforge.net/projects/logcheck
+        url $SOURCEFORGE_URL
+    require grep email-client
+   estimate 5
+  freshmeat logcheck
+       desc 'logcheck checks system log files for unusual activity
 Logcheck is software package that is designed to 
 automatically run and check system log files for 
 security violations and unusual activity. Logcheck 
 utilizes a program called logtail that remembers 
-the last position it read from in a log file.
-"
+the last position it read from in a log file.'
 
 function build() {
   CONFDIR=/etc/logcheck

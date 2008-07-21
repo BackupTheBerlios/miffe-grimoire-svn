@@ -1,14 +1,13 @@
-   VERSION=( "1.6.2" )
-      SAFE=( "1.6.2" )
-  CATEGORY="log web"
- ATTRIBUTE="utility new"
-    SOURCE="download/cronolog-$VERSION.tar.gz"
-       URL="http://cronolog.org/"
-       REQ=""
-  HOMEPAGE="http://cronolog.org"
- FRESHMEAT="cronolog"
-  ESTIMATE="41"
-      DESC="cronolog is web log rotation program.
+   require 1.6.2
+    secure 1.6.2
+  category log web
+ attribute utility new
+    source download/cronolog-$VERSION.tar.gz
+       url http://cronolog.org/
+  homepage http://cronolog.org
+ freshmeat cronolog
+  estimate 41
+      desc 'cronolog is web log rotation program.
 cronolog is a simple filter program that reads log file 
 entries from standard input and writes each entry to 
 the output file specified by a filename template and 
@@ -16,5 +15,4 @@ the current date and time. When the expanded filename
 changes, the current file is closed and a new one opened. 
 cronolog is intended to be used in conjunction with a 
 Web server, such as Apache, to split the access log 
-into daily or monthly logs. 
-"
+into daily or monthly logs.'

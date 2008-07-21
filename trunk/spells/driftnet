@@ -1,17 +1,16 @@
- VERSION=( "0.1.6" )
-CATEGORY="network"
-ATTRIBUTE="new x11"
-     URL="http://www.ex-parrot.com/~chris/$SPELL/"
-  SOURCE="$SPELL-$VERSION.tar.gz"
-HOMEPAGE="http://www.ex-parrot.com/~chris/driftnet/"
-     REQ="gtk+-v1.2 libpcap jpeg libungif"
-ESTIMATE="152"
-    DESC="driftnet sniffs network traffic and picks out images from TCP streams
-Driftnet is inspired by EtherPEG (though, not owning an Apple Macintosh,
-I've never actually seen it in operation), Driftnet is a program which
-listens to network traffic and picks out images from TCP streams it observes.
-Fun to run on a host which sees lots of web traffic.
-"
+   require 0.1.6
+  category network
+ attribute new x11
+       url http://www.ex-parrot.com/~chris/driftnet/
+    source driftnet-$VERSION.tar.gz
+  homepage http://www.ex-parrot.com/~chris/driftnet/
+   require gtk+-v1.2 libpcap jpeg libungif
+  estimate 152
+      desc 'driftnet sniffs network traffic and picks out images from TCP streams
+Driftnet is inspired by EtherPEG, it is a program which
+listens to network traffic and picks out images from TCP 
+streams it observes. Fun to run on a host which sees lots of 
+web traffic.'
 
 function build() {
   make                                 &&
