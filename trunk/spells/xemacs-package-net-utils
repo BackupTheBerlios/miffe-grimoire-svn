@@ -1,6 +1,0 @@
-inherit  xemacs
-   VERSION=( "1.48" "1.46" "1.44" "1.42" "1.38" "1.33" "1.32" "1.31" )
-    SOURCE="xemacs/packages/net-utils-$VERSION-pkg.tar.gz"
-      DESC="$SPELL provides miscellaneous networking utilities.
-"
-

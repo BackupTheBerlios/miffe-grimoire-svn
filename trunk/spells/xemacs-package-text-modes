@@ -1,6 +1,0 @@
-inherit  xemacs
-   VERSION=( "1.90" "1.88" "1.87" "1.82" )
-    SOURCE="xemacs/packages/text-modes-$VERSION-pkg.tar.gz"
-      DESC="$SPELL provides miscellaneous support for editing text files.
-"
-

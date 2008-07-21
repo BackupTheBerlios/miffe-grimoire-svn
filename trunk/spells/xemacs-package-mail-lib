@@ -1,6 +1,0 @@
-inherit  xemacs
-   VERSION=( "1.76" "1.75" "1.73" "1.70" )
-    SOURCE="xemacs/packages/mail-lib-$VERSION-pkg.tar.gz"
-      DESC="$SPELL provides fundamental lisp files for email support.
-"
-

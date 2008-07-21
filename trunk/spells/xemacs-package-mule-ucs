@@ -1,6 +1,0 @@
-inherit  xemacs
-   VERSION=( "1.14" "1.11" "1.06" "1.05" "1.04" )
-    SOURCE="xemacs/packages/mule-ucs-$VERSION-pkg.tar.gz"
-      DESC="$SPELL provides extended coding systems (including Unicode) for XEmacs.
-"
-

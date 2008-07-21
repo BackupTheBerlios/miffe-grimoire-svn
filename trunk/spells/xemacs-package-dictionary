@@ -1,6 +1,0 @@
-inherit  xemacs
-   VERSION=( "1.16" "1.15" "1.12" "1.11" )
-    SOURCE="xemacs/packages/dictionary-$VERSION-pkg.tar.gz"
-      DESC="$SPELL provides interface to RFC2229 dictionary servers.
-"
-
